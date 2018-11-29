@@ -8,8 +8,13 @@ import { CssBaseline } from '@material-ui/core';
 
 const styles = theme=> ({
   root: {
-    width: '100%',
-    maxWidth: 500,
+    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+    borderRadius: 3,
+    border: 0,
+    color: 'white',
+    height: 48,
+    padding: '0 30px',
+    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
   },
   content: {
     flexGrow: 1,
@@ -21,6 +26,9 @@ const styles = theme=> ({
 const theme = createMuiTheme({
   typography: {
     useNextVariants: true,
+    fontFamily: [
+      'Ubuntu Condensed',
+    ].join(','),
   },
   drawer: {
     width: 240,
@@ -59,21 +67,64 @@ class App extends Component {
     return (
       <div className="App">
       <CssBaseline/>
-      <createMuiTheme>
+      <MuiThemeProvider theme={theme}>
 
         <Drawer variant="permanent" color="primary">
-          Hey! I'm Steve!
+          <Typography variant="subtitle1">
+          NOW! THAT'S WHAT I CALL STEVE!
+          </Typography>          
+
+
           <br/>
-          <Button> oh dang</Button>
-          <Button> say what</Button>
-          <Button> aw heck</Button>
+          <Button variant="contained" color="secondary"> oh dang</Button>
+          <br/>
+          <Button variant="contained"> say what</Button>
+          <br/>
+          <Button variant="contained"> aw heck</Button>
+          <br/>
+
+          <br/>
+          <Button variant="outlined"> oh dang</Button>
+          <br/>
+          <Button variant="outlined"> say what</Button>
+          <br/>
+          <Button variant="outlined"> aw heck</Button>
+          <br/>
+
+
+          <br/>
+          <Button size="large"> oh dang</Button>
+          <br/>
+          <Button size="large"> say what</Button>
+          <br/>
+          <Button size="large"> aw heck</Button>
+          <br/>
+
+
+
         </Drawer>
 
-        <Typography>
-          this is my dang internet website 
+        <Typography variant="h3">
+          hey! i'm steve sefchick and this is my site
         </Typography>
 
-      </createMuiTheme>
+        <Typography>
+          this will be a section where I talk about myself a little
+        </Typography>
+
+        <Typography>
+          this will be a section about my portfolio and projects and crap
+        </Typography>
+
+        <Typography>
+          this will be a section with my skills listed out all pretty
+        </Typography>
+
+        <Typography>
+          this will be a footer or something.
+        </Typography>
+
+      </MuiThemeProvider>
 
       </div>
     );

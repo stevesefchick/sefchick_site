@@ -1,3 +1,4 @@
 ## It's my dang portfolio site
 
-Legit readme coming soon
+Steve Sefchick's Portfolio website!
+Made using ReactJS and Material-UI
