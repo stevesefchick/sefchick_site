@@ -62,7 +62,105 @@ const theme = createMuiTheme({
   },
 });
 
+
+
 class App extends Component {
+
+
+  aboutme()
+  {
+    return(
+      <div >
+      <Typography>
+        about me section!
+      </Typography>
+
+      <br/>
+      <br/>
+      </div>
+ 
+    )
+  }
+
+  professionalexp()
+  {
+    return(
+      <div >
+      <Typography>
+        business business business business
+      </Typography>
+
+            <br/>
+            <br/>
+
+      </div>
+ 
+    )
+  }
+
+  
+  projectsportfolios()
+  {
+    return(
+      <div >
+      <Typography>
+        all the fun stuff i like to talk about!
+      </Typography>
+
+            <br/>
+            <br/>
+
+      </div>
+ 
+    )
+  }
+
+  skillset()
+  {
+    return(
+      <div >
+      <Typography>
+        my skillllllllllllssssssssssssss
+      </Typography>
+
+            <br/>
+            <br/>
+
+      </div>
+ 
+    )
+  }
+
+  
+  education()
+  {
+    return(
+      <div >
+      <Typography>
+        $$$$$$$$$$$$$$$$$$$$$$$$$$
+      </Typography>
+
+            <br/>
+            <br/>
+
+      </div>
+ 
+    )
+  }
+
+  contactinfo()
+  {
+    return(
+      <div >
+      <Typography>
+        call me
+      </Typography>
+      </div>
+ 
+    )
+  }
+
+
   render() {
     return (
       <div className="App">
@@ -76,31 +174,18 @@ class App extends Component {
 
 
           <br/>
-          <Button variant="contained" color="secondary"> oh dang</Button>
+          <Button variant="outlined" size="large" href="#it_me">it me</Button>
           <br/>
-          <Button variant="contained"> say what</Button>
+          <Button variant="outlined" size="large" href="professional">a professional boy</Button>
           <br/>
-          <Button variant="contained"> aw heck</Button>
+          <Button variant="outlined" size="large" href="fun_stuff">fun stuff</Button>
           <br/>
-
+          <Button variant="outlined" size="large" href="skills_bills">skills 4 billz</Button>
           <br/>
-          <Button variant="outlined"> oh dang</Button>
+          <Button variant="outlined" size="large" href="education">source of loans</Button>
           <br/>
-          <Button variant="outlined"> say what</Button>
+          <Button variant="outlined" size="large" href="contact">love me plz</Button>
           <br/>
-          <Button variant="outlined"> aw heck</Button>
-          <br/>
-
-
-          <br/>
-          <Button size="large"> oh dang</Button>
-          <br/>
-          <Button size="large"> say what</Button>
-          <br/>
-          <Button size="large"> aw heck</Button>
-          <br/>
-
-
 
         </Drawer>
 
@@ -108,21 +193,50 @@ class App extends Component {
           hey! i'm steve sefchick and this is my site
         </Typography>
 
-        <Typography>
-          this will be a section where I talk about myself a little
+              <br/>
+              <br/>
+
+
+        <Typography variant="subtitle" id="it_me">
+          about me
         </Typography>
 
-        <Typography>
-          this will be a section about my portfolio and projects and crap
+        {this.aboutme()}
+
+        <Typography  variant="subtitle" id="professional">
+          professional experience!
         </Typography>
 
-        <Typography>
-          this will be a section with my skills listed out all pretty
+        {this.professionalexp()}
+
+
+        <Typography  variant="subtitle" id="fun_stuff">
+          projects and portfolio
         </Typography>
 
-        <Typography>
-          this will be a footer or something.
+        {this.projectsportfolios()}
+
+
+        <Typography variant="subtitle" id="skills_bills">
+          skillset!
         </Typography>
+
+        {this.skillset()}
+
+
+        <Typography  variant="subtitle" id="education">
+          education
+        </Typography>
+
+        {this.education()}
+
+
+        <Typography  variant="subtitle" id="contact">
+          contact/follow me!
+        </Typography>
+
+                {this.contactinfo()}
+
 
       </MuiThemeProvider>
 
