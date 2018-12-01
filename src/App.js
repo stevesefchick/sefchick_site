@@ -5,6 +5,10 @@ import { createMuiTheme, MuiThemeProvider, withStyles } from '@material-ui/core/
 import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
 import { CssBaseline } from '@material-ui/core';
+import Chip from '@material-ui/core/Chip';
+import Tooltip from '@material-ui/core/Tooltip';
+import Zoom from '@material-ui/core/Zoom';
+
 
 const styles = theme=> ({
   root: {
@@ -120,11 +124,153 @@ class App extends Component {
     return(
       <div >
       <Typography>
-        my skillllllllllllssssssssssssss
+        code
       </Typography>
+
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="c#" variant="outlined" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="HTML/CSS" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="HLSL"  variant="outlined" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="ReactJS" variant="outlined" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="Node.js" variant="outlined" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="PHP" variant="outlined" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="Java" variant="outlined" color="primary" />
+      </Tooltip>
 
             <br/>
             <br/>
+
+      <Typography>
+        data
+      </Typography>
+
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="MySQL" variant="outlined" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="MongoDB" variant="outlined" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="Google Tagging" variant="outlined" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="Google Firebase" variant="outlined" color="primary" />
+      </Tooltip>
+
+
+
+            <br/>
+            <br/>
+
+
+      <Typography>
+        tools
+      </Typography>
+
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="Jira/Confluence" variant="outlined" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="Slack" variant="outlined" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="MS Office Suite" variant="outlined" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="Postman" variant="outlined" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="QA Symphony" variant="outlined" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="GIMP" variant="outlined" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="Steam SDK" variant="outlined" color="primary" />
+      </Tooltip>
+
+            <br/>
+            <br/>
+
+
+      <Typography>
+        personal
+      </Typography>
+
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="Communication" variant="outlined" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="Problem Solving" variant="outlined" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="Self-Motivation" variant="outlined" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="Adaptability" variant="outlined" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="Creativity" variant="outlined" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="Teamwork" variant="outlined" color="primary" />
+      </Tooltip>
+
+            <br/>
+            <br/>
+
+
+      <Typography>
+        other
+      </Typography>
+
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="Agile Methodology" variant="outlined" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="Release Management" variant="outlined" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="Sharepoint" variant="outlined" color="primary" />
+      </Tooltip>
+
+            <br/>
+            <br/>
+
 
       </div>
  
@@ -190,7 +336,7 @@ class App extends Component {
         </Drawer>
 
         <Typography variant="h3">
-          hey! i'm steve sefchick and this is my site
+          hey! i'm steve!
         </Typography>
 
               <br/>
