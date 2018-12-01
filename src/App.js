@@ -127,11 +127,11 @@ class App extends Component {
         code
       </Typography>
 
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="c#" variant="outlined" color="primary" />
+      <Tooltip title="6+ years, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="C#" variant="outlined" color="primary" />
       </Tooltip>
 
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="8+ years, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="HTML/CSS" color="primary" />
       </Tooltip>
 
@@ -139,7 +139,7 @@ class App extends Component {
         <Chip label="HLSL"  variant="outlined" color="primary" />
       </Tooltip>
 
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="1 year" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="ReactJS" variant="outlined" color="primary" />
       </Tooltip>
 
