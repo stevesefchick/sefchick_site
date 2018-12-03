@@ -31,8 +31,9 @@ const theme = createMuiTheme({
   typography: {
     useNextVariants: true,
     fontFamily: [
-      'Ubuntu Condensed',
+      'Dosis',
     ].join(','),
+    fontSize: 16,
   },
   drawer: {
     width: 240,
@@ -41,25 +42,26 @@ const theme = createMuiTheme({
   palette:{"common":
     {black:"#000",
     white:"#fff"},
+  type: 'dark',
   background:
     {paper:"rgba(199, 138, 251, 1)",
     default:"rgba(217, 212, 212, 1)"},
   primary:
-    {light:"rgba(106, 113, 154, 1)",
-    main:"rgba(91, 8, 130, 1)",
-    dark:"rgba(95, 102, 141, 1)",
+    {light:"#6d6d6d",
+    main:"#424242",
+    dark:"#1b1b1b",
     contrastText:"#fff"},
   secondary:
-    {light:"#ff4081",
-    main:"rgba(147, 145, 145, 1)",
-    dark:"#c51162",
+    {light:"#c158dc",
+    main:"#8e24aa",
+    dark:"#5c007a",
     contrastText:"#fff"},
   error:{"light":"#e57373",
   main:"rgba(212, 26, 13, 1)",
   dark:"#d32f2f",
   contrastText:"#fff"},
   text:
-    {primary:"rgba(12, 1, 1, 0.87)",
+    {primary:"#000000",
     secondary:"rgba(5, 1, 1, 0.54)",
     disabled:"rgba(14, 1, 1, 0.38)",
     hint:"rgba(0, 0, 0, 0.38)"}
@@ -127,7 +129,7 @@ class App extends Component {
         code
       </Typography>
 
-      <Tooltip title="6+ years, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="6+ years, professional/personal" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="C#" variant="outlined" color="primary" />
       </Tooltip>
 
