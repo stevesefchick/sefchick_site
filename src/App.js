@@ -11,21 +11,20 @@ import Zoom from '@material-ui/core/Zoom';
 
 
 const styles = theme=> ({
-  root: {
-    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-    borderRadius: 3,
-    border: 0,
-    color: 'white',
-    height: 48,
-    padding: '0 30px',
-    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-  },
   content: {
     flexGrow: 1,
-    backgroundColor: theme.palette.background.default,
+    backgroundColor: theme.palette.background.primary,
     padding: theme.spacing.unit * 3,
   },
 });
+
+const drawertheme = createMuiTheme({
+  status: {
+    color: '#000000',
+  },
+});
+
+
 
 const theme = createMuiTheme({
   typography: {
@@ -43,9 +42,6 @@ const theme = createMuiTheme({
     {black:"#000",
     white:"#fff"},
   type: 'dark',
-  background:
-    {paper:"rgba(199, 138, 251, 1)",
-    default:"rgba(217, 212, 212, 1)"},
   primary:
     {light:"#6d6d6d",
     main:"#424242",
@@ -315,12 +311,10 @@ class App extends Component {
       <CssBaseline/>
       <MuiThemeProvider theme={theme}>
 
-        <Drawer variant="permanent" color="primary">
-          <Typography variant="subtitle1">
-          NOW! THAT'S WHAT I CALL STEVE!
-          </Typography>          
+      <MuiThemeProvider theme={drawertheme}>
 
-
+        <Drawer variant="permanent" >
+    
           <br/>
           <Button variant="outlined" size="large" href="#it_me">it me</Button>
           <br/>
@@ -336,6 +330,8 @@ class App extends Component {
           <br/>
 
         </Drawer>
+        </MuiThemeProvider>
+
 
         <Typography variant="h3">
           hey! i'm steve!
@@ -345,41 +341,41 @@ class App extends Component {
               <br/>
 
 
-        <Typography variant="subtitle" id="it_me">
+        <Typography variant="h4" id="it_me">
           about me
         </Typography>
 
         {this.aboutme()}
 
-        <Typography  variant="subtitle" id="professional">
+        <Typography  variant="h4" id="professional">
           professional experience!
         </Typography>
 
         {this.professionalexp()}
 
 
-        <Typography  variant="subtitle" id="fun_stuff">
+        <Typography  variant="h4" id="fun_stuff">
           projects and portfolio
         </Typography>
 
         {this.projectsportfolios()}
 
 
-        <Typography variant="subtitle" id="skills_bills">
+        <Typography variant="h4" id="skills_bills">
           skillset!
         </Typography>
 
         {this.skillset()}
 
 
-        <Typography  variant="subtitle" id="education">
+        <Typography  variant="h4" id="education">
           education
         </Typography>
 
         {this.education()}
 
 
-        <Typography  variant="subtitle" id="contact">
+        <Typography  variant="h4" id="contact">
           contact/follow me!
         </Typography>
 
