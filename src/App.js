@@ -8,6 +8,10 @@ import { CssBaseline } from '@material-ui/core';
 import Chip from '@material-ui/core/Chip';
 import Tooltip from '@material-ui/core/Tooltip';
 import Zoom from '@material-ui/core/Zoom';
+import indigo from '@material-ui/core/colors/indigo';
+import pink from '@material-ui/core/colors/pink';
+import red from '@material-ui/core/colors/red';
+import cyan from '@material-ui/core/colors/cyan';
 
 
 const styles = theme=> ({
@@ -17,14 +21,6 @@ const styles = theme=> ({
     padding: theme.spacing.unit * 3,
   },
 });
-
-const drawertheme = createMuiTheme({
-  status: {
-    color: '#000000',
-  },
-});
-
-
 
 const theme = createMuiTheme({
   typography: {
@@ -37,30 +33,15 @@ const theme = createMuiTheme({
   drawer: {
     width: 240,
     flexShrink: 0,
+    backgroundColor: red,
   },
-  palette:{"common":
-    {black:"#000",
-    white:"#fff"},
-  type: 'dark',
-  primary:
-    {light:"#6d6d6d",
-    main:"#424242",
-    dark:"#1b1b1b",
-    contrastText:"#fff"},
-  secondary:
-    {light:"#c158dc",
-    main:"#8e24aa",
-    dark:"#5c007a",
-    contrastText:"#fff"},
-  error:{"light":"#e57373",
-  main:"rgba(212, 26, 13, 1)",
-  dark:"#d32f2f",
-  contrastText:"#fff"},
-  text:
-    {primary:"#000000",
-    secondary:"rgba(5, 1, 1, 0.54)",
-    disabled:"rgba(14, 1, 1, 0.38)",
-    hint:"rgba(0, 0, 0, 0.38)"}
+  palette: {
+    primary: cyan,
+    secondary: pink,
+    error: red,
+    contrastThreshold: 3,
+    tonalOffset: 0.2,
+    type: 'dark',
   },
 });
 
@@ -169,6 +150,10 @@ class App extends Component {
       </Tooltip>
 
       <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="Vertica" variant="outlined" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Google Tagging" variant="outlined" color="primary" />
       </Tooltip>
 
@@ -251,24 +236,32 @@ class App extends Component {
 
 
       <Typography>
-        other
+        concepts
       </Typography>
 
       <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Agile Methodology" variant="outlined" color="primary" />
       </Tooltip>
-
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="SDLC principles" variant="outlined" color="primary" />
+      </Tooltip>
       <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Release Management" variant="outlined" color="primary" />
       </Tooltip>
+            <br/>
+            <br/>
+
+
+      <Typography>
+        other
+      </Typography>
 
       <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Sharepoint" variant="outlined" color="primary" />
       </Tooltip>
 
-            <br/>
-            <br/>
-
+      <br/>
+      <br/>
 
       </div>
  
@@ -311,8 +304,6 @@ class App extends Component {
       <CssBaseline/>
       <MuiThemeProvider theme={theme}>
 
-      <MuiThemeProvider theme={drawertheme}>
-
         <Drawer variant="permanent" >
     
           <br/>
@@ -330,7 +321,6 @@ class App extends Component {
           <br/>
 
         </Drawer>
-        </MuiThemeProvider>
 
 
         <Typography variant="h3">
