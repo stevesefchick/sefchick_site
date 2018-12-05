@@ -72,11 +72,13 @@ class App extends Component {
           I have a varied, but balanced background, with experience in everything from requirements analysis, to design brainstorming, to development and deployment, and just about everything in between.
           I love to learn and crave challenge.
           <br /><br />
-          On my spare time, I love hanging out with my awesome partner and pets. I'm also a fan of rhythm games.
+          On my spare time, I'm a friendly boy.
+          <br />
           </Typography>
           </Paper>
         </Grid>
       </Grid>
+
       <br/>
       <br/>
       </div>
@@ -88,16 +90,51 @@ class App extends Component {
   {
     return(
       <div >
-      <Typography>
-        Wawa, Inc.<br/>
-        2003-2010 Store Associate<br/>
-        2010-2012 QA Tester<br/>
-        2012-2014 Business Analyst - Store Operations<br/>
-        2014-present Business Analyst - Mobile and Digital Technologies<br/>
 
-        Wimbus Studios<br/>
-        2013 - present - Developer/Co-Owner<br/>
-      </Typography>
+        <Grid container justify='center' spacing={24}>
+          <Grid item xs={4}>
+            <Paper elevation={10}>
+
+
+
+              <Typography>
+                Wawa, Inc.<br/>
+                <br/>
+                2014-present Business Analyst - Mobile and Digital Technologies<br/>
+                2012-2014 Business Analyst - Store Operations<br/>
+                2010-2012 QA Tester<br/>
+                2003-2010 Store Associate<br/>
+                </Typography>
+
+            </Paper>
+          </Grid>
+          <Grid item xs={4}>
+
+              <img src="https://image.shutterstock.com/z/stock-photo-princeton-new-jersey-usa-november-wawa-gas-station-store-749769307.jpg" width={175} height={175} />
+
+            </Grid>
+        </Grid>
+
+        <br />
+
+        <Grid container justify='center'  spacing={24}>
+          <Grid item xs={4}>
+
+            <img src="https://pbs.twimg.com/profile_images/470269005203116032/kbk9PxzT_400x400.png" width={175} height={175} />
+
+
+          </Grid>
+          <Grid item xs={4}>
+            <Paper elevation={10}>
+            <Typography>
+                Wimbus Studios<br/>
+                <br/>
+                2013 - present - Developer/Co-Owner<br/>
+              </Typography>
+            </Paper>
+            </Grid>
+        </Grid>
+
 
             <br/>
             <br/>
@@ -299,13 +336,28 @@ class App extends Component {
   {
     return(
       <div >
+
+        <Grid container justify='center'>
+          <Grid item xs={8}>
+            <Paper elevation={10}>
+
       <Typography>
-      2018 - BACHELOR’S
-Software Development and Design / Wilmington University
-2011 - ASSOCIATE’S
-Game Design and Development / Camden County College
+      2018 - BACHELOR’S <br />
+Software Development and Design from Wilmington University<br />
+Graduated with honors<br/>
+
+<br />
+
+2011 - ASSOCIATE’S <br />
+Game Design and Development from Camden County College <br />
 
       </Typography>
+
+          </Paper>
+        </Grid>
+      </Grid>
+
+
 
             <br/>
             <br/>
@@ -337,9 +389,9 @@ Game Design and Development / Camden County College
         <Drawer variant="permanent" open >
     
           <br/>
-          <Button variant="outlined" size="large" href="#it_me">it me</Button>
+          <Button variant="outlined" size="large" href="#it_me">about me</Button>
           <br/>
-          <Button variant="outlined" size="large" href="#professional">a professional boy</Button>
+          <Button variant="outlined" size="large" href="#professional">professional experience</Button>
           <br/>
           <Button variant="outlined" size="large" href="#fun_stuff">fun stuff</Button>
           <br/>
@@ -353,7 +405,7 @@ Game Design and Development / Camden County College
         </Drawer>
 
         <Typography variant="h3">
-          Hello! I'm Steve Sefchick!
+          Hello! I'm Steve Sefchick
         </Typography>
 
               <br/>
@@ -361,13 +413,13 @@ Game Design and Development / Camden County College
 
 
         <Typography variant="h4" id="it_me">
-          About Me!
+          About Me
         </Typography>
 
         {this.aboutme()}
 
         <Typography  variant="h4" id="professional">
-          My Experience!
+          My Experience
         </Typography>
 
         {this.professionalexp()}
@@ -388,7 +440,7 @@ Game Design and Development / Camden County College
 
 
         <Typography  variant="h4" id="education">
-          education
+          Education
         </Typography>
 
         {this.education()}
