@@ -3,22 +3,29 @@ import './App.css';
 import Typography from '@material-ui/core/Typography';
 import { createMuiTheme, MuiThemeProvider, withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
+import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 import { CssBaseline } from '@material-ui/core';
 import Chip from '@material-ui/core/Chip';
 import Tooltip from '@material-ui/core/Tooltip';
 import Zoom from '@material-ui/core/Zoom';
-import indigo from '@material-ui/core/colors/indigo';
 import pink from '@material-ui/core/colors/pink';
 import red from '@material-ui/core/colors/red';
 import cyan from '@material-ui/core/colors/cyan';
+import Grid from '@material-ui/core/Grid';
 
 
 const styles = theme=> ({
+  root: {
+    display: 'flex',
+  },
   content: {
     flexGrow: 1,
     backgroundColor: theme.palette.background.primary,
     padding: theme.spacing.unit * 3,
+  },
+  drawerPaper: {
+    width: 180,
   },
 });
 
@@ -31,7 +38,7 @@ const theme = createMuiTheme({
     fontSize: 16,
   },
   drawer: {
-    width: 240,
+    width: 180,
     flexShrink: 0,
     backgroundColor: red,
   },
@@ -49,15 +56,27 @@ const theme = createMuiTheme({
 
 class App extends Component {
 
+  state = {
+    mobileOpen: false,
+  };
 
   aboutme()
   {
     return(
       <div >
-      <Typography>
-        about me section!
-      </Typography>
-
+        <Grid container justify='center'>
+          <Grid item xs={8}>
+            <Paper elevation={10}>
+          <Typography>
+          I’m a creative maker driven to build amazing things.
+          I have a varied, but balanced background, with experience in everything from requirements analysis, to design brainstorming, to development and deployment, and just about everything in between.
+          I love to learn and crave challenge.
+          <br /><br />
+          On my spare time, I love hanging out with my awesome partner and pets. I'm also a fan of rhythm games.
+          </Typography>
+          </Paper>
+        </Grid>
+      </Grid>
       <br/>
       <br/>
       </div>
@@ -70,7 +89,14 @@ class App extends Component {
     return(
       <div >
       <Typography>
-        business business business business
+        Wawa, Inc.<br/>
+        2003-2010 Store Associate<br/>
+        2010-2012 QA Tester<br/>
+        2012-2014 Business Analyst - Store Operations<br/>
+        2014-present Business Analyst - Mobile and Digital Technologies<br/>
+
+        Wimbus Studios<br/>
+        2013 - present - Developer/Co-Owner<br/>
       </Typography>
 
             <br/>
@@ -274,7 +300,11 @@ class App extends Component {
     return(
       <div >
       <Typography>
-        $$$$$$$$$$$$$$$$$$$$$$$$$$
+      2018 - BACHELOR’S
+Software Development and Design / Wilmington University
+2011 - ASSOCIATE’S
+Game Design and Development / Camden County College
+
       </Typography>
 
             <br/>
@@ -290,7 +320,7 @@ class App extends Component {
     return(
       <div >
       <Typography>
-        call me
+        email / linkedin / twitter? / github / other?
       </Typography>
       </div>
  
@@ -304,27 +334,26 @@ class App extends Component {
       <CssBaseline/>
       <MuiThemeProvider theme={theme}>
 
-        <Drawer variant="permanent" >
+        <Drawer variant="permanent" open >
     
           <br/>
           <Button variant="outlined" size="large" href="#it_me">it me</Button>
           <br/>
-          <Button variant="outlined" size="large" href="professional">a professional boy</Button>
+          <Button variant="outlined" size="large" href="#professional">a professional boy</Button>
           <br/>
-          <Button variant="outlined" size="large" href="fun_stuff">fun stuff</Button>
+          <Button variant="outlined" size="large" href="#fun_stuff">fun stuff</Button>
           <br/>
-          <Button variant="outlined" size="large" href="skills_bills">skills 4 billz</Button>
+          <Button variant="outlined" size="large" href="#skills_bills">skills 4 billz</Button>
           <br/>
-          <Button variant="outlined" size="large" href="education">source of loans</Button>
+          <Button variant="outlined" size="large" href="#education">source of loans</Button>
           <br/>
-          <Button variant="outlined" size="large" href="contact">love me plz</Button>
+          <Button variant="outlined" size="large" href="#contact">love me plz</Button>
           <br/>
 
         </Drawer>
 
-
         <Typography variant="h3">
-          hey! i'm steve!
+          Hello! I'm Steve Sefchick!
         </Typography>
 
               <br/>
@@ -332,13 +361,13 @@ class App extends Component {
 
 
         <Typography variant="h4" id="it_me">
-          about me
+          About Me!
         </Typography>
 
         {this.aboutme()}
 
         <Typography  variant="h4" id="professional">
-          professional experience!
+          My Experience!
         </Typography>
 
         {this.professionalexp()}
@@ -375,6 +404,7 @@ class App extends Component {
       </MuiThemeProvider>
 
       </div>
+
     );
   }
 }
