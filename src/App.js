@@ -13,6 +13,8 @@ import pink from '@material-ui/core/colors/pink';
 import red from '@material-ui/core/colors/red';
 import cyan from '@material-ui/core/colors/cyan';
 import Grid from '@material-ui/core/Grid';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
 
 
 const styles = theme=> ({
@@ -384,7 +386,21 @@ Game Design and Development from Camden County College <br />
     return (
       <div className="App">
       <CssBaseline/>
+
       <MuiThemeProvider theme={theme}>
+
+      <AppBar>
+        <Toolbar variant="dense">
+        <Button variant="outlined" size="large" href="#it_me">about me</Button>
+        <Button variant="outlined" size="large" href="#professional">professional experience</Button>
+        <Button variant="outlined" size="large" href="#fun_stuff">fun stuff</Button>
+        <Button variant="outlined" size="large" href="#skills_bills">skills 4 billz</Button>
+        <Button variant="outlined" size="large" href="#education">source of loans</Button>
+        <Button variant="outlined" size="large" href="#contact">love me plz</Button>
+        </Toolbar>
+      </AppBar>
+
+      {/*
 
         <Drawer variant="permanent" open >
     
@@ -403,7 +419,7 @@ Game Design and Development from Camden County College <br />
           <br/>
 
         </Drawer>
-
+    */}
         <Typography variant="h3">
           Hello! I'm Steve Sefchick
         </Typography>
