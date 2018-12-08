@@ -15,7 +15,7 @@
 }
 
 .AppHeader {
-  background:url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/footer_lodyas.png);
+  background:url(images/honeycombbg.jpg);
   -webkit-animation:100s scroll infinite linear;
   -moz-animation:100s scroll infinite linear;
   -o-animation:100s scroll infinite linear;
@@ -29,30 +29,30 @@
 
 @-webkit-keyframes scroll{
   100%{
-    background-position:0px 3000px;
+    background-position:3000px 3000px;
   }
 }
 
 @-moz-keyframes scroll{
   100%{
-    background-position:0px 3000px;
+    background-position:3000px 3000px;
   }
 }
 
 @-o-keyframes scroll{
   100%{
-    background-position:0px 3000px;
+    background-position:3000px 3000px;
   }
 }
 
 @-ms-keyframes scroll{
   100%{
-    background-position:0px 3000px;
+    background-position:3000px 3000px;
   }
 }
 
 @keyframes scroll{
   100%{
-    background-position:0px 3000px;
+    background-position:3000px 3000px;
   }
 }
