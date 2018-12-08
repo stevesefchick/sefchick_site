@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import Typography from '@material-ui/core/Typography';
 import { createMuiTheme, MuiThemeProvider, withStyles } from '@material-ui/core/styles';
-import Drawer from '@material-ui/core/Drawer';
 import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 import { CssBaseline } from '@material-ui/core';
@@ -152,7 +151,10 @@ class App extends Component {
     return(
       <div >
       <Typography>
-        all the fun stuff i like to talk about!
+        IESGame <br />
+        Questline <br/>
+        Bad Twitter Bot <br/>
+        Meds <br/>
       </Typography>
 
             <br/>
@@ -171,32 +173,44 @@ class App extends Component {
         code
       </Typography>
 
-      <Tooltip title="6+ years, professional/personal" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="6+ years, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="C#" variant="outlined" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="3+ years, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="Javascript" variant="outlined" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="1 year, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="ReactJS" variant="outlined" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="2+ years, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="Node.js" variant="outlined" color="primary" />
       </Tooltip>
 
       <Tooltip title="8+ years, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="HTML/CSS" color="primary" />
       </Tooltip>
 
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="2+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="HLSL"  variant="outlined" color="primary" />
       </Tooltip>
 
-      <Tooltip title="1 year" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="ReactJS" variant="outlined" color="primary" />
-      </Tooltip>
-
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="Node.js" variant="outlined" color="primary" />
-      </Tooltip>
-
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="2 years, primarily schoolwork" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="PHP" variant="outlined" color="primary" />
       </Tooltip>
 
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="3+ years, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Java" variant="outlined" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="1 year, primarily schoolwork" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="C++" variant="outlined" color="primary" />
+      </Tooltip>
+      
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="Flash" variant="outlined" color="primary" />
       </Tooltip>
 
             <br/>
@@ -206,23 +220,23 @@ class App extends Component {
         data
       </Typography>
 
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="4+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="MySQL" variant="outlined" color="primary" />
       </Tooltip>
 
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="3+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="MongoDB" variant="outlined" color="primary" />
       </Tooltip>
 
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="3+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Vertica" variant="outlined" color="primary" />
       </Tooltip>
 
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="Google Tagging" variant="outlined" color="primary" />
+      <Tooltip title="2+ years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="Google Analytics" variant="outlined" color="primary" />
       </Tooltip>
 
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="1 year" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Google Firebase" variant="outlined" color="primary" />
       </Tooltip>
 
@@ -236,31 +250,31 @@ class App extends Component {
         tools
       </Typography>
 
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="4+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Jira/Confluence" variant="outlined" color="primary" />
       </Tooltip>
 
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="2+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Slack" variant="outlined" color="primary" />
       </Tooltip>
 
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="6+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="MS Office Suite" variant="outlined" color="primary" />
       </Tooltip>
 
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="4+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Postman" variant="outlined" color="primary" />
       </Tooltip>
 
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="2+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="QA Symphony" variant="outlined" color="primary" />
       </Tooltip>
 
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="6+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="GIMP" variant="outlined" color="primary" />
       </Tooltip>
 
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="2+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Steam SDK" variant="outlined" color="primary" />
       </Tooltip>
 
@@ -384,6 +398,9 @@ Game Design and Development from Camden County College <br />
 
   render() {
     return (
+
+
+
       <div className="App">
       <CssBaseline/>
 
@@ -420,33 +437,33 @@ Game Design and Development from Camden County College <br />
 
         </Drawer>
     */}
-        <Typography variant="h3">
-          Hello! I'm Steve Sefchick
-        </Typography>
 
-              <br/>
-              <br/>
+      <div className="AppHeader">
+            <CssBaseline/>
 
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <Typography variant="h3">
+        stevesefchick.fyi
+      </Typography>
 
-        <Typography variant="h4" id="it_me">
-          About Me
-        </Typography>
+      <br/><br/><br/><br/><br/><br/><br/><br/>
 
-        {this.aboutme()}
+      </div>
 
-        <Typography  variant="h4" id="professional">
-          My Experience
-        </Typography>
-
-        {this.professionalexp()}
-
+<br/><br/>
 
         <Typography  variant="h4" id="fun_stuff">
-          projects and portfolio
+          My Projects and Portfolio
         </Typography>
 
         {this.projectsportfolios()}
 
+
+        <Typography  variant="h4" id="professional">
+          Professional Experience
+        </Typography>
+
+        {this.professionalexp()}
 
         <Typography variant="h4" id="skills_bills">
           skillset!
@@ -454,19 +471,24 @@ Game Design and Development from Camden County College <br />
 
         {this.skillset()}
 
-
         <Typography  variant="h4" id="education">
           Education
         </Typography>
 
         {this.education()}
 
+        <Typography variant="h4" id="it_me">
+          About Me
+        </Typography>
+
+         {this.aboutme()}
+
 
         <Typography  variant="h4" id="contact">
           contact/follow me!
         </Typography>
 
-                {this.contactinfo()}
+        {this.contactinfo()}
 
 
       </MuiThemeProvider>
