@@ -452,6 +452,8 @@ Game Design and Development from Camden County College <br />
 
 <br/><br/>
 
+
+
         <Typography  variant="h4" id="fun_stuff">
           My Projects and Portfolio
         </Typography>
@@ -463,7 +465,10 @@ Game Design and Development from Camden County College <br />
           Professional Experience
         </Typography>
 
-        {this.professionalexp()}
+                {this.professionalexp()}
+
+
+
 
         <Typography variant="h4" id="skills_bills">
           skillset!
