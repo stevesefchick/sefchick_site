@@ -151,10 +151,84 @@ class App extends Component {
     return(
       <div >
       <Typography>
-        IESGame <br />
-        Questline <br/>
-        Bad Twitter Bot <br/>
-        Meds <br/>
+
+        Games
+
+        <Grid container justify='center' spacing={24}>
+          <Grid item xs={4}>
+            <Paper elevation={10}>
+              [pics w/ carousel]
+              <br/>
+              The Island of Eternal Struggle
+              <br/>
+              Turn based RPG out on Steam Early Access
+              <br/>
+              I did: programming, game design, etc.
+              <br/>
+              Status: In Development
+              <br/>
+              Stuff to brag about:
+              <ul>
+              <li>
+                thing number one
+              </li>
+              <li>
+              thing number two
+              </li>
+              <li>
+              thing number three
+              </li>
+              </ul>
+            </Paper>
+          </Grid>
+
+
+          <Grid item xs={4}>
+            <Paper elevation={10}>
+              [pics w/ carousel]
+              <br/>
+              Meds
+              <br/>
+              A breakout-meets-Eternal Darkness mashup on XBLIG
+              <br/>
+              I did: programming, game design, etc.
+              <br/>
+              Status: Complete
+              <br/>
+              Stuff to brag about:
+              <ul>
+              <li>
+                thing number one
+              </li>
+              <li>
+              thing number two
+              </li>
+              <li>
+              thing number three
+              </li>
+              </ul>
+            </Paper>
+          </Grid>
+
+        </Grid>
+
+      Web
+
+              <Grid container justify='center' spacing={24}>
+          <Grid item xs={4}>
+            <Paper elevation={10}>
+            Questline
+            </Paper>
+            </Grid>
+
+
+          <Grid item xs={4}>
+            <Paper elevation={10}>
+            WimbusStudios.com
+            </Paper>
+            </Grid>
+            </Grid>
+
       </Typography>
 
             <br/>
