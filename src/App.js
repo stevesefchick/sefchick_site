@@ -27,7 +27,7 @@ const styles = theme=> ({
   },
   drawerPaper: {
     width: 180,
-  },
+  }
 });
 
 const theme = createMuiTheme({
@@ -91,7 +91,6 @@ class App extends Component {
   {
     return(
       <div >
-
         <Grid container justify='center' spacing={24}>
           <Grid item xs={4}>
             <Paper elevation={10}>
@@ -99,38 +98,47 @@ class App extends Component {
 
 
               <Typography>
-                Wawa, Inc.<br/>
+                Wawa, Inc.<br/><br/>
+                Over 15 years of experience working in a convenience retail industry, from a retail in-store position to a tenured Business Analyst Position in a customer-facing, digital environment. Currently responsible for the Wawa Mobile App, Wawa.com, and Wawarewards.com.<br/>
+
                 <br/>
-                2014-present Business Analyst - Mobile and Digital Technologies<br/>
-                2012-2014 Business Analyst - Store Operations<br/>
-                2010-2012 QA Tester<br/>
-                2003-2010 Store Associate<br/>
+                Current Role:<br/>
+                2014-present: Senior Business Analyst - Mobile and Digital Technologies<br/>
+                <br/>
+
+                Responsibilities:<br/>
+                Development and creation of thoughtful user stories. <br/>
+                Development and creation of test plans and test scripts. <br/>
+                Building and maintaining relationships with the Digital Marketing Team, the Contact Center, Application Management, and a wide array of other business and IT partners.<br/>
+                Support, problem solving, and deep diving into production challenges.<br/>
+
+                <br/>
+                Previous:<br/>
+                2012-2014: Business Analyst - Store Operations<br/>
+                2010-2012: QA Tester<br/>
+                2003-2010: Store Associate<br/>
                 </Typography>
 
             </Paper>
           </Grid>
           <Grid item xs={4}>
-
-              <img src="https://image.shutterstock.com/z/stock-photo-princeton-new-jersey-usa-november-wawa-gas-station-store-749769307.jpg" width={175} height={175} />
-
-            </Grid>
-        </Grid>
-
-        <br />
-
-        <Grid container justify='center'  spacing={24}>
-          <Grid item xs={4}>
-
-            <img src="https://pbs.twimg.com/profile_images/470269005203116032/kbk9PxzT_400x400.png" width={175} height={175} />
-
-
-          </Grid>
-          <Grid item xs={4}>
             <Paper elevation={10}>
             <Typography>
-                Wimbus Studios<br/>
+                Wimbus Studios<br/><br/>
+                Designed, coded, deployed, and promoted the video game "The Island of Eternal Struggle" with a team of three starting with just an idea. <br/>
+
                 <br/>
-                2013 - present - Developer/Co-Owner<br/>
+                Current Role:<br/>
+                2013 - present:  Developer/Co-Owner/Wearer of Many Hats<br/>
+                <br/>
+
+                Responsibilities:<br/>
+                Development of an early access Steam title using C# utilizing the Monogame Framework.<br/>
+                Project planning, brainstorming, and driving major releases along with my team members.<br/>
+                Representing the game and the studio at game conferences.<br/>
+                <br/>
+
+
               </Typography>
             </Paper>
             </Grid>
@@ -545,7 +553,7 @@ Game Design and Development from Camden County College <br />
 
 
         <Typography variant="h4" id="skills_bills">
-          skillset!
+          My skillset
         </Typography>
 
         {this.skillset()}
