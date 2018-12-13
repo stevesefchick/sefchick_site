@@ -10,7 +10,6 @@ import Tooltip from '@material-ui/core/Tooltip';
 import Zoom from '@material-ui/core/Zoom';
 import pink from '@material-ui/core/colors/pink';
 import red from '@material-ui/core/colors/red';
-import cyan from '@material-ui/core/colors/cyan';
 import Grid from '@material-ui/core/Grid';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -44,7 +43,10 @@ const theme = createMuiTheme({
     backgroundColor: red,
   },
   palette: {
-    primary: cyan,
+    //primary: cyan,
+    primary:{
+      main: '#000000',
+    },
     secondary: pink,
     error: red,
     contrastThreshold: 3,
@@ -165,35 +167,22 @@ class App extends Component {
         <Grid container justify='center' spacing={24}>
           <Grid item xs={4}>
             <Paper elevation={10}>
-              [pics w/ carousel]
+              [pic]
               <br/>
               The Island of Eternal Struggle
               <br/>
-              Turn based RPG out on Steam Early Access
-              <br/>
-              I did: programming, game design, etc.
+              Turn based RPG out on Steam Early Access. 
               <br/>
               Status: In Development
               <br/>
-              Stuff to brag about:
-              <ul>
-              <li>
-                thing number one
-              </li>
-              <li>
-              thing number two
-              </li>
-              <li>
-              thing number three
-              </li>
-              </ul>
+
             </Paper>
           </Grid>
 
 
           <Grid item xs={4}>
             <Paper elevation={10}>
-              [pics w/ carousel]
+              [pic]
               <br/>
               Meds
               <br/>
@@ -202,19 +191,6 @@ class App extends Component {
               I did: programming, game design, etc.
               <br/>
               Status: Complete
-              <br/>
-              Stuff to brag about:
-              <ul>
-              <li>
-                thing number one
-              </li>
-              <li>
-              thing number two
-              </li>
-              <li>
-              thing number three
-              </li>
-              </ul>
             </Paper>
           </Grid>
 
@@ -490,6 +466,7 @@ Game Design and Development from Camden County College <br />
 
       <AppBar>
         <Toolbar variant="dense">
+        stevesefchick.fyi!
         <Button variant="outlined" size="large" href="#it_me">about me</Button>
         <Button variant="outlined" size="large" href="#professional">professional experience</Button>
         <Button variant="outlined" size="large" href="#fun_stuff">fun stuff</Button>
@@ -536,6 +513,12 @@ Game Design and Development from Camden County College <br />
 
 
 
+        <Typography variant="h4" id="it_me">
+          About Me
+        </Typography>
+
+         {this.aboutme()}
+
         <Typography  variant="h4" id="fun_stuff">
           My Projects and Portfolio
         </Typography>
@@ -550,8 +533,6 @@ Game Design and Development from Camden County College <br />
                 {this.professionalexp()}
 
 
-
-
         <Typography variant="h4" id="skills_bills">
           My skillset
         </Typography>
@@ -563,13 +544,6 @@ Game Design and Development from Camden County College <br />
         </Typography>
 
         {this.education()}
-
-        <Typography variant="h4" id="it_me">
-          About Me
-        </Typography>
-
-         {this.aboutme()}
-
 
         <Typography  variant="h4" id="contact">
           contact/follow me!
