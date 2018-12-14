@@ -21,6 +21,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import IconButton from '@material-ui/core/IconButton';
 
 const styles = theme=> ({
   root: {
@@ -63,6 +64,21 @@ const theme = createMuiTheme({
     tonalOffset: 0.2,
     type: 'dark',
   },
+  /*
+  expand: {
+    transform: 'rotate(0deg)',
+    transition: theme.transitions.create('transform', {
+      duration: theme.transitions.duration.shortest,
+    }),
+    marginLeft: 'auto',
+    [theme.breakpoints.up('sm')]: {
+      marginRight: -8,
+    },
+  },
+  expandOpen: {
+    transform: 'rotate(180deg)',
+  },
+  */
 });
 
 
@@ -71,14 +87,22 @@ class App extends Component {
 
   state = {
     mobileOpen: false,
+    state : { expanded: false }
+  };
+
+
+  handleExpandClick = () => {
+    this.setState(state => ({ expanded: !state.expanded }));
   };
 
   aboutme(classes)
   {
+
+
+
     return(
       <div >
-        <Grid container justify='center'>
-          <Grid item xs={8}>
+
           <Card className={classes.card} raised='true'>
         <CardHeader title="About Me" />
         <CardContent>
@@ -91,10 +115,11 @@ class App extends Component {
                   <br />
             </Typography>
           </CardContent>
+          <CardActions className={classes.actions} disableActionSpacing>
+ 
+        </CardActions>
       </Card> 
 
-        </Grid>
-      </Grid>
 
       <br/>
       <br/>
