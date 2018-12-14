@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import classnames from 'classnames';
 import './App.css';
 import Typography from '@material-ui/core/Typography';
 import { createMuiTheme, MuiThemeProvider, withStyles } from '@material-ui/core/styles';
@@ -13,7 +15,12 @@ import red from '@material-ui/core/colors/red';
 import Grid from '@material-ui/core/Grid';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-
+import Card from '@material-ui/core/Card';
+import CardHeader from '@material-ui/core/CardHeader';
+import CardMedia from '@material-ui/core/CardMedia';
+import CardContent from '@material-ui/core/CardContent';
+import CardActions from '@material-ui/core/CardActions';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const styles = theme=> ({
   root: {
@@ -26,6 +33,9 @@ const styles = theme=> ({
   },
   drawerPaper: {
     width: 180,
+  },
+  card: {
+    maxWidth: 500,
   }
 });
 
@@ -63,22 +73,26 @@ class App extends Component {
     mobileOpen: false,
   };
 
-  aboutme()
+  aboutme(classes)
   {
     return(
       <div >
         <Grid container justify='center'>
           <Grid item xs={8}>
-            <Paper elevation={10}>
-          <Typography>
-          I’m a creative maker driven to build amazing things.
-          I have a varied, but balanced background, with experience in everything from requirements analysis, to design brainstorming, to development and deployment, and just about everything in between.
-          I love to learn and crave challenge.
-          <br /><br />
-          On my spare time, I'm a friendly boy.
-          <br />
-          </Typography>
-          </Paper>
+          <Card className={classes.card} raised='true'>
+        <CardHeader title="About Me" />
+        <CardContent>
+            <Typography>
+                I’m a creative maker driven to build amazing things.
+                  I have a varied, but balanced background, with experience in everything from requirements analysis, to design brainstorming, to development and deployment, and just about everything in between.
+                  I love to learn and crave challenge.
+                  <br /><br />
+                  On my spare time, I'm a friendly boy.
+                  <br />
+            </Typography>
+          </CardContent>
+      </Card> 
+
         </Grid>
       </Grid>
 
@@ -198,6 +212,10 @@ class App extends Component {
 
       Web
 
+
+
+
+{/*
               <Grid container justify='center' spacing={24}>
           <Grid item xs={4}>
             <Paper elevation={10}>
@@ -212,6 +230,7 @@ class App extends Component {
             </Paper>
             </Grid>
             </Grid>
+*/}
 
       </Typography>
 
@@ -455,6 +474,8 @@ Game Design and Development from Camden County College <br />
 
 
   render() {
+    const { classes } = this.props;
+
     return (
 
 
@@ -475,6 +496,8 @@ Game Design and Development from Camden County College <br />
         <Button variant="outlined" size="large" href="#contact">love me plz</Button>
         </Toolbar>
       </AppBar>
+
+
 
       {/*
 
@@ -514,42 +537,42 @@ Game Design and Development from Camden County College <br />
 
 
         <Typography variant="h4" id="it_me">
-          About Me
+          Hi, I'm Steve!
         </Typography>
 
-         {this.aboutme()}
+         {this.aboutme(classes)}
 
         <Typography  variant="h4" id="fun_stuff">
           My Projects and Portfolio
         </Typography>
 
-        {this.projectsportfolios()}
+        {this.projectsportfolios(classes)}
 
 
         <Typography  variant="h4" id="professional">
           Professional Experience
         </Typography>
 
-                {this.professionalexp()}
+                {this.professionalexp(classes)}
 
 
         <Typography variant="h4" id="skills_bills">
           My skillset
         </Typography>
 
-        {this.skillset()}
+        {this.skillset(classes)}
 
         <Typography  variant="h4" id="education">
           Education
         </Typography>
 
-        {this.education()}
+        {this.education(classes)}
 
         <Typography  variant="h4" id="contact">
           contact/follow me!
         </Typography>
 
-        {this.contactinfo()}
+        {this.contactinfo(classes)}
 
 
       </MuiThemeProvider>
