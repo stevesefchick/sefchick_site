@@ -103,6 +103,8 @@ class App extends Component {
     return(
       <div >
 
+        <Grid container justify='center' spacing={24}>
+          <Grid item xs={4}>
           <Card className={classes.card} raised='true'>
         <CardHeader title="About Me" />
         <CardContent>
@@ -119,7 +121,8 @@ class App extends Component {
  
         </CardActions>
       </Card> 
-
+      </Grid>
+      </Grid>
 
       <br/>
       <br/>
@@ -128,18 +131,18 @@ class App extends Component {
     )
   }
 
-  professionalexp()
+  professionalexp(classes)
   {
     return(
       <div >
+
+
         <Grid container justify='center' spacing={24}>
           <Grid item xs={4}>
-            <Paper elevation={10}>
-
-
-
-              <Typography>
-                Wawa, Inc.<br/><br/>
+          <Card className={classes.card} raised='true'>
+        <CardHeader title="Wawa, Inc." />
+        <CardContent>
+            <Typography>
                 Over 15 years of experience working in a convenience retail industry, from a retail in-store position to a tenured Business Analyst Position in a customer-facing, digital environment. Currently responsible for the Wawa Mobile App, Wawa.com, and Wawarewards.com.<br/>
 
                 <br/>
@@ -158,14 +161,19 @@ class App extends Component {
                 2012-2014: Business Analyst - Store Operations<br/>
                 2010-2012: QA Tester<br/>
                 2003-2010: Store Associate<br/>
-                </Typography>
+            </Typography>
+          </CardContent>
+          <CardActions className={classes.actions} disableActionSpacing>
+ 
+        </CardActions>
+      </Card> 
 
-            </Paper>
-          </Grid>
-          <Grid item xs={4}>
-            <Paper elevation={10}>
+            </Grid>
+            <Grid item xs={4}>
+          <Card className={classes.card} raised='true'>
+        <CardHeader title="Wimbus Studios" />
+        <CardContent>
             <Typography>
-                Wimbus Studios<br/><br/>
                 Designed, coded, deployed, and promoted the video game "The Island of Eternal Struggle" with a team of three starting with just an idea. <br/>
 
                 <br/>
@@ -178,16 +186,15 @@ class App extends Component {
                 Project planning, brainstorming, and driving major releases along with my team members.<br/>
                 Representing the game and the studio at game conferences.<br/>
                 <br/>
+            </Typography>
+          </CardContent>
+          <CardActions className={classes.actions} disableActionSpacing>
+ 
+        </CardActions>
+      </Card> 
+      </Grid>
+      </Grid>
 
-
-              </Typography>
-            </Paper>
-            </Grid>
-        </Grid>
-
-
-            <br/>
-            <br/>
 
       </div>
  
@@ -195,7 +202,7 @@ class App extends Component {
   }
 
   
-  projectsportfolios()
+  projectsportfolios(classes)
   {
     return(
       <div >
@@ -205,32 +212,42 @@ class App extends Component {
 
         <Grid container justify='center' spacing={24}>
           <Grid item xs={4}>
-            <Paper elevation={10}>
-              [pic]
-              <br/>
-              The Island of Eternal Struggle
-              <br/>
-              Turn based RPG out on Steam Early Access. 
+
+          <Card className={classes.card} raised='true'>
+        <CardHeader title="The Island of Eternal Struggle" />
+        <CardContent>
+            <Typography>
+            Turn based RPG out on Steam Early Access. 
               <br/>
               Status: In Development
               <br/>
+            </Typography>
+          </CardContent>
+          <CardActions className={classes.actions} disableActionSpacing>
+ 
+        </CardActions>
+      </Card> 
 
-            </Paper>
           </Grid>
 
 
           <Grid item xs={4}>
-            <Paper elevation={10}>
-              [pic]
-              <br/>
-              Meds
-              <br/>
-              A breakout-meets-Eternal Darkness mashup on XBLIG
+          <Card className={classes.card} raised='true'>
+        <CardHeader title="Meds" />
+        <CardContent>
+            <Typography>
+            A breakout-meets-Eternal Darkness mashup on XBLIG
               <br/>
               I did: programming, game design, etc.
               <br/>
               Status: Complete
-            </Paper>
+            </Typography>
+          </CardContent>
+          <CardActions className={classes.actions} disableActionSpacing>
+ 
+        </CardActions>
+      </Card> 
+
           </Grid>
 
         </Grid>
@@ -238,24 +255,41 @@ class App extends Component {
       Web
 
 
-
-
-{/*
-              <Grid container justify='center' spacing={24}>
+      <Grid container justify='center' spacing={24}>
           <Grid item xs={4}>
-            <Paper elevation={10}>
-            Questline
-            </Paper>
-            </Grid>
+
+          <Card className={classes.card} raised='true'>
+        <CardHeader title="WimbusStudios.com" />
+        <CardContent>
+            <Typography>
+           cool site 
+            </Typography>
+          </CardContent>
+          <CardActions className={classes.actions} disableActionSpacing>
+ 
+        </CardActions>
+      </Card> 
+
+          </Grid>
 
 
           <Grid item xs={4}>
-            <Paper elevation={10}>
-            WimbusStudios.com
-            </Paper>
-            </Grid>
-            </Grid>
-*/}
+          <Card className={classes.card} raised='true'>
+        <CardHeader title="Questline" />
+        <CardContent>
+            <Typography>
+wip
+            </Typography>
+          </CardContent>
+          <CardActions className={classes.actions} disableActionSpacing>
+ 
+        </CardActions>
+      </Card> 
+
+          </Grid>
+
+        </Grid>
+
 
       </Typography>
 
@@ -267,7 +301,7 @@ class App extends Component {
     )
   }
 
-  skillset()
+  skillset(classes)
   {
     return(
       <div >
@@ -450,35 +484,46 @@ class App extends Component {
   }
 
   
-  education()
+  education(classes)
   {
     return(
       <div >
 
-        <Grid container justify='center'>
-          <Grid item xs={8}>
-            <Paper elevation={10}>
+        <Grid container justify='center' spacing={24}>
+          <Grid item xs={5}>
+          <Card className={classes.card} raised='true'>
+        <CardHeader title="Bachelor's Degree in Software Development and Design" />
+        <CardContent>
+            <Typography>
+           Wilmington University<br/>
+           Graduated in 2018<br/>
+           Graduated with Honor <br/>
+            </Typography>
+          </CardContent>
+          <CardActions className={classes.actions} disableActionSpacing>
+ 
+        </CardActions>
+      </Card> 
+      
+      </Grid>
+      <br/>
+      <Grid item xs={5}>
+      <Card className={classes.card} raised='true'>
+        <CardHeader title="Associate's Degree in Game Design and Development" />
+        <CardContent>
+            <Typography>
+           Camden County College<br/>
+           Graduated in 2011<br/>
+            </Typography>
+          </CardContent>
+          <CardActions className={classes.actions} disableActionSpacing>
+ 
+        </CardActions>
+      </Card> 
 
-      <Typography>
-      2018 - BACHELOR’S <br />
-Software Development and Design from Wilmington University<br />
-Graduated with honors<br/>
-
-<br />
-
-2011 - ASSOCIATE’S <br />
-Game Design and Development from Camden County College <br />
-
-      </Typography>
-
-          </Paper>
-        </Grid>
+</Grid>
       </Grid>
 
-
-
-            <br/>
-            <br/>
 
       </div>
  
@@ -514,36 +559,14 @@ Game Design and Development from Camden County College <br />
         <Toolbar variant="dense">
         stevesefchick.fyi!
         <Button variant="outlined" size="large" href="#it_me">about me</Button>
+        <Button variant="outlined" size="large" href="#fun_stuff">portfolio</Button>
         <Button variant="outlined" size="large" href="#professional">professional experience</Button>
-        <Button variant="outlined" size="large" href="#fun_stuff">fun stuff</Button>
-        <Button variant="outlined" size="large" href="#skills_bills">skills 4 billz</Button>
-        <Button variant="outlined" size="large" href="#education">source of loans</Button>
-        <Button variant="outlined" size="large" href="#contact">love me plz</Button>
+        <Button variant="outlined" size="large" href="#skills_bills">skillset</Button>
+        <Button variant="outlined" size="large" href="#education">education</Button>
+        <Button variant="outlined" size="large" href="#contact">contact</Button>
         </Toolbar>
       </AppBar>
 
-
-
-      {/*
-
-        <Drawer variant="permanent" open >
-    
-          <br/>
-          <Button variant="outlined" size="large" href="#it_me">about me</Button>
-          <br/>
-          <Button variant="outlined" size="large" href="#professional">professional experience</Button>
-          <br/>
-          <Button variant="outlined" size="large" href="#fun_stuff">fun stuff</Button>
-          <br/>
-          <Button variant="outlined" size="large" href="#skills_bills">skills 4 billz</Button>
-          <br/>
-          <Button variant="outlined" size="large" href="#education">source of loans</Button>
-          <br/>
-          <Button variant="outlined" size="large" href="#contact">love me plz</Button>
-          <br/>
-
-        </Drawer>
-    */}
 
       <div className="AppHeader">
             <CssBaseline/>
