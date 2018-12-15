@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import classnames from 'classnames';
 import './App.css';
 import Typography from '@material-ui/core/Typography';
 import { createMuiTheme, MuiThemeProvider, withStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 import { CssBaseline } from '@material-ui/core';
 import Chip from '@material-ui/core/Chip';
@@ -37,7 +34,7 @@ const styles = theme=> ({
   },
   card: {
     maxWidth: 500,
-  }
+  },
 });
 
 const theme = createMuiTheme({
@@ -58,7 +55,9 @@ const theme = createMuiTheme({
     primary:{
       main: '#000000',
     },
-    secondary: pink,
+    secondary: {
+      main: '#32253f',
+    },
     error: red,
     contrastThreshold: 3,
     tonalOffset: 0.2,
