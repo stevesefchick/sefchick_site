@@ -305,24 +305,28 @@ wip
   {
     return(
       <div >
-      <Typography>
-        code
-      </Typography>
 
-      <Tooltip title="6+ years, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="C#" variant="outlined" color="primary" />
+        <Grid container justify='center' spacing={24}>
+          <Grid item xs={3}>
+          <Card className={classes.card} raised='true'>
+        <CardHeader title="Code" />
+        <CardContent>
+
+
+<Tooltip title="6+ years, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="C#" color="primary" />
       </Tooltip>
 
       <Tooltip title="3+ years, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="Javascript" variant="outlined" color="primary" />
+        <Chip label="Javascript" color="primary" />
       </Tooltip>
 
       <Tooltip title="1 year, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="ReactJS" variant="outlined" color="primary" />
+        <Chip label="ReactJS"  color="primary" />
       </Tooltip>
 
       <Tooltip title="2+ years, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="Node.js" variant="outlined" color="primary" />
+        <Chip label="Node.js" color="primary" />
       </Tooltip>
 
       <Tooltip title="8+ years, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
@@ -330,153 +334,192 @@ wip
       </Tooltip>
 
       <Tooltip title="2+ years" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="HLSL"  variant="outlined" color="primary" />
+        <Chip label="HLSL"  color="primary" />
       </Tooltip>
 
       <Tooltip title="2 years, primarily schoolwork" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="PHP" variant="outlined" color="primary" />
+        <Chip label="PHP" color="primary" />
       </Tooltip>
 
       <Tooltip title="3+ years, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="Java" variant="outlined" color="primary" />
+        <Chip label="Java" color="primary" />
       </Tooltip>
 
       <Tooltip title="1 year, primarily schoolwork" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="C++" variant="outlined" color="primary" />
+        <Chip label="C++" color="primary" />
       </Tooltip>
       
       <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="Flash" variant="outlined" color="primary" />
+        <Chip label="Flash" color="primary" />
       </Tooltip>
 
-            <br/>
-            <br/>
 
-      <Typography>
-        data
-      </Typography>
+          </CardContent>
+      </Card> 
 
-      <Tooltip title="4+ years" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="MySQL" variant="outlined" color="primary" />
+
+          </Grid>
+
+          <Grid item xs={3}>
+          <Card className={classes.card} raised='true'>
+        <CardHeader title="Data" />
+        <CardContent>
+
+     <Tooltip title="4+ years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="MySQL" color="primary" />
       </Tooltip>
 
       <Tooltip title="3+ years" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="MongoDB" variant="outlined" color="primary" />
+        <Chip label="MongoDB"  color="primary" />
       </Tooltip>
 
       <Tooltip title="3+ years" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="Vertica" variant="outlined" color="primary" />
+        <Chip label="Vertica" color="primary" />
       </Tooltip>
 
       <Tooltip title="2+ years" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="Google Analytics" variant="outlined" color="primary" />
+        <Chip label="Google Analytics" color="primary" />
       </Tooltip>
 
       <Tooltip title="1 year" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="Google Firebase" variant="outlined" color="primary" />
+        <Chip label="Google Firebase" color="primary" />
       </Tooltip>
 
+          </CardContent>
+      </Card> 
 
 
-            <br/>
-            <br/>
+          </Grid>
 
 
-      <Typography>
-        tools
-      </Typography>
-
-      <Tooltip title="4+ years" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="Jira/Confluence" variant="outlined" color="primary" />
-      </Tooltip>
+         <Grid item xs={3}>
+          <Card className={classes.card} raised='true'>
+        <CardHeader title="Tools" />
+        <CardContent>
 
       <Tooltip title="2+ years" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="Slack" variant="outlined" color="primary" />
-      </Tooltip>
-
-      <Tooltip title="6+ years" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="MS Office Suite" variant="outlined" color="primary" />
+        <Chip label="Git" color="primary" />
       </Tooltip>
 
       <Tooltip title="4+ years" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="Postman" variant="outlined" color="primary" />
+        <Chip label="Jira/Confluence" color="primary" />
       </Tooltip>
 
       <Tooltip title="2+ years" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="QA Symphony" variant="outlined" color="primary" />
+        <Chip label="Slack" color="primary" />
       </Tooltip>
 
       <Tooltip title="6+ years" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="GIMP" variant="outlined" color="primary" />
+        <Chip label="MS Office Suite" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="4+ years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="Postman" color="primary" />
       </Tooltip>
 
       <Tooltip title="2+ years" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="Steam SDK" variant="outlined" color="primary" />
+        <Chip label="QA Symphony" color="primary" />
       </Tooltip>
 
-            <br/>
-            <br/>
+      <Tooltip title="6+ years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="GIMP" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="2+ years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="Steam SDK" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="1 year" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="Butler" color="primary" />
+      </Tooltip>
+
+          </CardContent>
+      </Card> 
 
 
-      <Typography>
-        personal
-      </Typography>
+          </Grid>
+</Grid>
+<Grid container justify='center' spacing={24}>
+
+
+
+   <Grid item xs={3}>
+          <Card className={classes.card} raised='true'>
+        <CardHeader title="Interpersonal" />
+        <CardContent>
+
+
 
       <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="Communication" variant="outlined" color="primary" />
+        <Chip label="Communication" color="primary" />
       </Tooltip>
 
       <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="Problem Solving" variant="outlined" color="primary" />
+        <Chip label="Problem Solving"  color="primary" />
       </Tooltip>
 
       <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="Self-Motivation" variant="outlined" color="primary" />
+        <Chip label="Self-Motivation" color="primary" />
       </Tooltip>
 
       <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="Adaptability" variant="outlined" color="primary" />
+        <Chip label="Adaptability" color="primary" />
       </Tooltip>
 
       <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="Creativity" variant="outlined" color="primary" />
+        <Chip label="Creativity" color="primary" />
       </Tooltip>
 
       <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="Teamwork" variant="outlined" color="primary" />
+        <Chip label="Teamwork" color="primary" />
       </Tooltip>
 
-            <br/>
-            <br/>
+          </CardContent>
+      </Card> 
 
 
-      <Typography>
-        concepts
-      </Typography>
+          </Grid>
+
+
+<Grid item xs={3}>
+          <Card className={classes.card} raised='true'>
+        <CardHeader title="Concepts" />
+        <CardContent>
 
       <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="Agile Methodology" variant="outlined" color="primary" />
+        <Chip label="Agile Methodology" color="primary" />
       </Tooltip>
       <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="SDLC principles" variant="outlined" color="primary" />
+        <Chip label="SDLC principles" color="primary" />
       </Tooltip>
       <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="Release Management" variant="outlined" color="primary" />
+        <Chip label="Release Management" color="primary" />
       </Tooltip>
-            <br/>
-            <br/>
+
+          </CardContent>
+      </Card> 
 
 
-      <Typography>
-        other
-      </Typography>
+          </Grid>
+
+
+      <Grid item xs={3}>
+          <Card className={classes.card} raised='true'>
+        <CardHeader title="Other" />
+        <CardContent>
 
       <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="Sharepoint" variant="outlined" color="primary" />
+        <Chip label="Sharepoint" color="primary" />
       </Tooltip>
 
-      <br/>
-      <br/>
+          </CardContent>
+      </Card> 
+
+          </Grid>
+
+          </Grid>
+
+
 
       </div>
  
