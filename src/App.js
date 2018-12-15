@@ -206,10 +206,12 @@ class App extends Component {
   {
     return(
       <div >
+
+      <Typography variant='h6' align='center'>
+      Games
+      </Typography>
+
       <Typography>
-
-        Games
-
         <Grid container justify='center' spacing={24}>
           <Grid item xs={4}>
 
@@ -252,7 +254,10 @@ class App extends Component {
 
         </Grid>
 
+      
+      <Typography variant='h6' align='center'>
       Web
+      </Typography>
 
 
       <Grid container justify='center' spacing={24}>
@@ -533,7 +538,7 @@ wip
       <div >
 
         <Grid container justify='center' spacing={24}>
-          <Grid item xs={5}>
+          <Grid item xs={4}>
           <Card className={classes.card} raised='true'>
         <CardHeader title="Bachelor's Degree in Software Development and Design" />
         <CardContent>
@@ -550,7 +555,7 @@ wip
       
       </Grid>
       <br/>
-      <Grid item xs={5}>
+      <Grid item xs={4}>
       <Card className={classes.card} raised='true'>
         <CardHeader title="Associate's Degree in Game Design and Development" />
         <CardContent>
@@ -615,7 +620,7 @@ wip
             <CssBaseline/>
 
       <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-      <Typography variant="h3">
+      <Typography variant="h1" align='center'>
         stevesefchick.fyi
       </Typography>
 
@@ -627,39 +632,39 @@ wip
 
 
 
-        <Typography variant="h4" id="it_me">
+        <Typography variant="h4" id="it_me" align='center'>
           Hi, I'm Steve!
         </Typography>
 
          {this.aboutme(classes)}
 
-        <Typography  variant="h4" id="fun_stuff">
+        <Typography  variant="h4" id="fun_stuff" align='center'>
           My Projects and Portfolio
         </Typography>
 
         {this.projectsportfolios(classes)}
 
 
-        <Typography  variant="h4" id="professional">
+        <Typography  variant="h4" id="professional" align='center'>
           Professional Experience
         </Typography>
 
                 {this.professionalexp(classes)}
 
 
-        <Typography variant="h4" id="skills_bills">
+        <Typography variant="h4" id="skills_bills" align='center'>
           My skillset
         </Typography>
 
         {this.skillset(classes)}
 
-        <Typography  variant="h4" id="education">
+        <Typography  variant="h4" id="education" align='center'>
           Education
         </Typography>
 
         {this.education(classes)}
 
-        <Typography  variant="h4" id="contact">
+        <Typography  variant="h4" id="contact" align='center'>
           contact/follow me!
         </Typography>
 
