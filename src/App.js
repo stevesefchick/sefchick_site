@@ -254,7 +254,26 @@ class App extends Component {
         <CardHeader title="The Island of Eternal Struggle" />
         <CardContent>
             <Typography>
-            Turn based RPG out on Steam Early Access. 
+            Turn based RPG out on Steam Early Access. <br/>
+            <br/>
+
+            Stuff I did:<br/>
+            <ul>
+            <li>Coded the entire game using C#/Monogame Framework</li>
+            <li>Assisted in the game design process, especially combat and character class mechanics</li>
+            <li>Built a custom particle effect editor</li>
+            <li>Showcased the game at over a dozen different local gaming events</li>
+            <li>Led the process of establishing the Wimbus Studio business and publishing the game on Steam and itch.io</li>
+            </ul>
+            Links:<br/>
+            <ul>
+            <li><a href="https://store.steampowered.com/app/534240/The_Island_of_Eternal_Struggle/" target="_blank">Steam link</a></li>
+            <li><a href="https://wimbusstudios.itch.io/the-island-of-eternal-struggle" target="_blank">itch.io link</a></li>
+            <li><a href="https://youtu.be/Wr59M17RxNE" target="_blank">Trailer</a></li>
+            <li><a href="http://www.siliconera.com/2014/10/11/nun-viking-discoman-walk-rpg/" target="_blank">Siliconera Preview</a></li>
+            <li><a href="https://www.youtube.com/watch?v=neYHKyXGUHs" target="_blank">CrispyNoodle video interview</a></li>
+            <li><a href="https://www.youtube.com/watch?v=jup2EBn-2Fc" target="_blank">AverageGiants LetsPlay</a></li>
+            </ul>
               <br/>
               Status: In Development
               <br/>
@@ -273,9 +292,20 @@ class App extends Component {
         <CardHeader title="Meds" />
         <CardContent>
             <Typography>
-            A breakout-meets-Eternal Darkness mashup on XBLIG
+            A breakout-meets-Eternal Darkness mashup on XBLIG<br/>
               <br/>
-              I did: programming, game design, etc.
+              Stuff I did:<br/>
+            <ul>
+            <li>Coded the entire game using C#/XNA Framework</li>
+            <li>Designed the game and contributed a large portion of art assets</li>
+            <li>Published the game on XBLIG</li>
+            </ul>
+            Links:<br/>
+            <ul>
+            <li><a href="https://www.youtube.com/watch?v=Wr5SFGFrlH0" target="_blank">Meds Trailer</a></li>
+            <li><a href="https://www.wired.com/2010/07/meds-xbox-indie/" target="_blank">Wired.com Review</a></li>
+            </ul>
+              <br/>
               <br/>
               Status: Complete
             </Typography>
@@ -289,6 +319,7 @@ class App extends Component {
 
         </Grid>
 
+      <br/>
       
       <Typography variant='h6' align='center'>
       Web
