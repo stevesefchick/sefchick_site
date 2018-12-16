@@ -19,6 +19,13 @@ import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import IconButton from '@material-ui/core/IconButton';
+import CodeIcon from '@material-ui/icons/Code';
+import ArtTrackIcon from '@material-ui/icons/ArtTrack';
+import GamesIcon from '@material-ui/icons/Games';
+import WebIcon from '@material-ui/icons/Web';
+import GroupIcon from '@material-ui/icons/Group';
+import PersonIcon from '@material-ui/icons/Person';
+import DoneIcon from '@material-ui/icons/DoneOutline';
 
 const styles = theme=> ({
   root: {
@@ -44,6 +51,7 @@ const theme = createMuiTheme({
       'Dosis',
     ].join(','),
     fontSize: 16,
+    
   },
   drawer: {
     width: 180,
@@ -59,6 +67,7 @@ const theme = createMuiTheme({
       main: '#32253f',
     },
     error: red,
+    
     contrastThreshold: 3,
     tonalOffset: 0.2,
     type: 'dark',
@@ -102,6 +111,39 @@ class App extends Component {
     return(
       <div >
 
+      <br/><br/>
+
+      <Typography variant='h6' align='center'>
+      What I Do:
+      </Typography>
+
+              <Grid container justify='center' spacing={12}>
+          <Grid item xs={4}>
+
+            <Typography>
+                Requirements Gathering and Story Creation
+            </Typography>
+      </Grid>
+
+                <Grid item xs={4}>
+
+<Typography>
+    Web and Application Development
+</Typography>
+</Grid>
+
+          <Grid item xs={4}>
+
+<Typography>
+    Game Design and Development
+</Typography>
+</Grid>
+      </Grid>
+
+
+<br/>
+<br/>
+
         <Grid container justify='center' spacing={24}>
           <Grid item xs={4}>
           <Card className={classes.card} raised='true'>
@@ -134,7 +176,6 @@ class App extends Component {
   {
     return(
       <div >
-
 
         <Grid container justify='center' spacing={24}>
           <Grid item xs={4}>
@@ -174,7 +215,7 @@ class App extends Component {
                   Helped drive initiatives such as the Mobile App launch (and redesign), Mobile Ordering, and In App Payment<br/>
                   </li>
                   <li>
-                  Nominated for corporate "Wings of Excellence" award for improving and streamlining our mobile testing progress<br/>
+                  Nominated for corporate "Wings of Excellence" award for improving and streamlining our mobile testing process<br/>
                   </li>
                 </ul>
 
@@ -275,12 +316,30 @@ class App extends Component {
             <li><a href="https://www.youtube.com/watch?v=jup2EBn-2Fc" target="_blank">AverageGiants LetsPlay</a></li>
             </ul>
               <br/>
-              Status: In Development
-              <br/>
             </Typography>
           </CardContent>
+          
           <CardActions className={classes.actions} disableActionSpacing>
- 
+
+<Tooltip title="Code" aria-label="Code" TransitionComponent={Zoom}>
+            <IconButton aria-label="Code">
+            <CodeIcon />
+          </IconButton>
+</Tooltip>
+
+<Tooltip title="Design" aria-label="Design" TransitionComponent={Zoom}>
+            <IconButton aria-label="Design">
+            <ArtTrackIcon />
+          </IconButton>
+</Tooltip>
+
+<Tooltip title="Game Development" aria-label="Game Development" TransitionComponent={Zoom}>
+            <IconButton aria-label="Game Development">
+            <GamesIcon />
+          </IconButton>
+</Tooltip>
+
+
         </CardActions>
       </Card> 
 
@@ -306,12 +365,16 @@ class App extends Component {
             <li><a href="https://www.wired.com/2010/07/meds-xbox-indie/" target="_blank">Wired.com Review</a></li>
             </ul>
               <br/>
-              <br/>
-              Status: Complete
             </Typography>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
  
+          <Tooltip title="Completed Project" aria-label="Completed Project" TransitionComponent={Zoom}>
+            <IconButton aria-label="Completed Project">
+            <DoneIcon />
+          </IconButton>
+</Tooltip>
+
         </CardActions>
       </Card> 
 
@@ -333,11 +396,36 @@ class App extends Component {
         <CardHeader title="WimbusStudios.com" />
         <CardContent>
             <Typography>
-           cool site 
+           A website designed with standard HTML/CSS stylings for Wimbus Studios.
             </Typography>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
  
+ 
+          <Tooltip title="Completed Project" aria-label="Completed Project" TransitionComponent={Zoom}>
+            <IconButton aria-label="Completed Project">
+            <DoneIcon />
+          </IconButton>
+          </Tooltip>
+
+          <Tooltip title="Web Development" aria-label="Web Development" TransitionComponent={Zoom}>
+            <IconButton aria-label="Web Development">
+            <WebIcon />
+          </IconButton>
+          </Tooltip>
+
+          <Tooltip title="Code" aria-label="Code" TransitionComponent={Zoom}>
+            <IconButton aria-label="Code">
+            <CodeIcon />
+          </IconButton>
+          </Tooltip>
+
+          <Tooltip title="Group Project" aria-label="Group Project" TransitionComponent={Zoom}>
+            <IconButton aria-label="Group Project">
+            <GroupIcon />
+          </IconButton>
+          </Tooltip>
+
         </CardActions>
       </Card> 
 
@@ -353,6 +441,12 @@ wip
             </Typography>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
+ 
+          <Tooltip title="Solo Project" aria-label="Solo Project" TransitionComponent={Zoom}>
+            <IconButton aria-label="Solo Project">
+            <PersonIcon />
+          </IconButton>
+</Tooltip>
  
         </CardActions>
       </Card> 
@@ -680,7 +774,7 @@ wip
 
       <AppBar>
         <Toolbar variant="dense">
-        stevesefchick.fyi!
+        STEVESEFCHICK.FYI -->
         <Button variant="outlined" size="large" href="#it_me">about me</Button>
         <Button variant="outlined" size="large" href="#fun_stuff">portfolio</Button>
         <Button variant="outlined" size="large" href="#professional">professional experience</Button>

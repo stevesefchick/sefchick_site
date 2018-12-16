@@ -1,8 +1,13 @@
 .App {
   background-color: #32253f;
+  
   /*padding-left: 210px;
   padding-top: 20px;
   */
+}
+
+a:link .App{
+  color: red;
 }
 
 
