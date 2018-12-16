@@ -147,13 +147,37 @@ class App extends Component {
                 <br/>
                 Current Role:<br/>
                 2014-present: Senior Business Analyst - Mobile and Digital Technologies<br/>
+
                 <br/>
 
                 Responsibilities:<br/>
-                Development and creation of thoughtful user stories. <br/>
-                Development and creation of test plans and test scripts. <br/>
-                Building and maintaining relationships with the Digital Marketing Team, the Contact Center, Application Management, and a wide array of other business and IT partners.<br/>
-                Support, problem solving, and deep diving into production challenges.<br/>
+                <ul>
+                  <li>
+                  Development and creation of thoughtful user stories<br/>
+                  </li>
+                  <li>
+                  Development and creation of test plans and test scripts<br/>
+                  </li>
+                  <li>
+                  Building and maintaining relationships with the Digital Marketing Team, the Contact Center, Application Management, and a wide array of other business and IT partners<br/>
+                  </li>
+                  <li>
+                  Support, problem solving, and deep diving into production challenges<br/>
+                  </li>
+                </ul>
+
+                <br/>
+
+                Proudest Moments:<br/>
+                <ul>
+                  <li>
+                  Helped drive initiatives such as the Mobile App launch (and redesign), Mobile Ordering, and In App Payment<br/>
+                  </li>
+                  <li>
+                  Nominated for corporate "Wings of Excellence" award for improving and streamlining our mobile testing progress<br/>
+                  </li>
+                </ul>
+
 
                 <br/>
                 Previous:<br/>
@@ -181,10 +205,18 @@ class App extends Component {
                 <br/>
 
                 Responsibilities:<br/>
-                Development of an early access Steam title using C# utilizing the Monogame Framework.<br/>
-                Project planning, brainstorming, and driving major releases along with my team members.<br/>
-                Representing the game and the studio at game conferences.<br/>
-                <br/>
+                <ul>
+                  <li>
+                  Development of an early access Steam title using C# utilizing the Monogame Framework<br/>
+                  </li>
+                  <li>
+                  Project planning, brainstorming, and driving major releases along with my team members<br/>
+                  </li>
+                  <li>
+                  Representing the game and the studio at game conferences<br/>
+                  </li>
+                </ul>
+
             </Typography>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
@@ -194,9 +226,13 @@ class App extends Component {
       </Grid>
       </Grid>
 
-
+        <br/>
+        <br/>
       </div>
  
+
+
+
     )
   }
 
@@ -572,6 +608,8 @@ wip
       </Grid>
 
 
+        <br/>
+        <br/>
       </div>
  
     )
@@ -584,6 +622,13 @@ wip
       <Typography>
         email / linkedin / twitter? / github / other?
       </Typography>
+
+
+
+
+      
+      <br/>
+        <br/>
       </div>
  
     )
@@ -618,12 +663,12 @@ wip
       <div className="AppHeader">
             <CssBaseline/>
 
-      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/>
       <Typography variant="h1" align='center'>
         stevesefchick.fyi
       </Typography>
 
-      <br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/>
 
       </div>
 
