@@ -6,10 +6,21 @@
   */
 }
 
-a:link .App{
-  color: red;
+a:link{
+  color: white;
+}
+a:visited{
+  color: rgb(206, 206, 206);
+}
+a:hover{
+  color: #000000;
 }
 
+h1{
+  /*text-shadow: 4px 4px black;*/
+  text-shadow: -6px 0 black, 0 6px black, 6px 0 black, 0 -6px black;
+
+}
 
 .AppHeader {
   background:url(images/honeycombbg.jpg);
