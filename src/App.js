@@ -340,6 +340,14 @@ class App extends Component {
 </Tooltip>
 
 
+<Tooltip title="Group Project" aria-label="Group Project" TransitionComponent={Zoom}>
+            <IconButton aria-label="Group Project">
+            <GroupIcon />
+          </IconButton>
+          </Tooltip>
+
+
+
         </CardActions>
       </Card> 
 
@@ -351,7 +359,7 @@ class App extends Component {
         <CardHeader title="Meds" />
         <CardContent>
             <Typography>
-            A breakout-meets-Eternal Darkness mashup on XBLIG<br/>
+            A breakout-meets-Eternal Darkness mashup on XBLIG.<br/>
               <br/>
               Stuff I did:<br/>
             <ul>
@@ -374,6 +382,25 @@ class App extends Component {
             <DoneIcon />
           </IconButton>
 </Tooltip>
+
+<Tooltip title="Design" aria-label="Design" TransitionComponent={Zoom}>
+            <IconButton aria-label="Design">
+            <ArtTrackIcon />
+          </IconButton>
+</Tooltip>
+
+<Tooltip title="Game Development" aria-label="Game Development" TransitionComponent={Zoom}>
+            <IconButton aria-label="Game Development">
+            <GamesIcon />
+          </IconButton>
+</Tooltip>
+
+<Tooltip title="Group Project" aria-label="Group Project" TransitionComponent={Zoom}>
+            <IconButton aria-label="Group Project">
+            <GroupIcon />
+          </IconButton>
+          </Tooltip>
+
 
         </CardActions>
       </Card> 
@@ -455,8 +482,63 @@ wip
 
         </Grid>
 
+      <br />
+
+      <Typography variant='h6' align='center'>
+      Other
+      </Typography>
+
+
+      <Grid container justify='center' spacing={24}>
+      <Grid item xs={4}>
+          <Card className={classes.card} raised='true'>
+        <CardHeader title="Business Bot DX" />
+        <CardContent>
+            <Typography>
+            A Twitter bot created with NodeJS using Heroku to schedule and tweet randomly generated business jargon. <br/><br/>
+
+            Links:<br/>
+            <ul>
+            <li><a href="https://twitter.com/BusinessBotDX" target="_blank">@BusinessBotDX</a></li>
+            <li><a href="https://github.com/stevesefchick/business-bot" target="_blank">Git project</a></li>
+            </ul>
+            </Typography>
+          </CardContent>
+          <CardActions className={classes.actions} disableActionSpacing>
+ 
+          <Tooltip title="Completed Project" aria-label="Completed Project" TransitionComponent={Zoom}>
+            <IconButton aria-label="Completed Project">
+            <DoneIcon />
+          </IconButton>
+          </Tooltip>
+
+          <Tooltip title="Code" aria-label="Code" TransitionComponent={Zoom}>
+            <IconButton aria-label="Code">
+            <CodeIcon />
+          </IconButton>
+          </Tooltip>
+
+          <Tooltip title="Solo Project" aria-label="Solo Project" TransitionComponent={Zoom}>
+            <IconButton aria-label="Solo Project">
+            <PersonIcon />
+          </IconButton>
+          </Tooltip>
+ 
+        </CardActions>
+      </Card> 
+
+          </Grid>
+
+        </Grid>
+
+
+
+
 
       </Typography>
+
+
+
 
             <br/>
             <br/>
