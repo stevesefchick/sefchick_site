@@ -194,16 +194,16 @@ class App extends Component {
                 Responsibilities:<br/>
                 <ul>
                   <li>
-                  Development and creation of thoughtful user stories<br/>
+                  Development and creation of thoughtful user stories
                   </li>
                   <li>
-                  Development and creation of test plans and test scripts<br/>
+                  Development and creation of test plans and test scripts
                   </li>
                   <li>
-                  Building and maintaining relationships with the Digital Marketing Team, the Contact Center, Application Management, and a wide array of other business and IT partners<br/>
+                  Building and maintaining relationships with the Digital Marketing Team, the Contact Center, Application Management, and a wide array of other business and IT partners
                   </li>
                   <li>
-                  Support, problem solving, and deep diving into production challenges<br/>
+                  Support, problem solving, and deep diving into production challenges
                   </li>
                 </ul>
 
@@ -212,10 +212,10 @@ class App extends Component {
                 Proudest Moments:<br/>
                 <ul>
                   <li>
-                  Helped drive initiatives such as the Mobile App launch (and redesign), Mobile Ordering, and In App Payment<br/>
+                  Helped drive initiatives such as the Mobile App launch (and redesign), Mobile Ordering, and In App Payment
                   </li>
                   <li>
-                  Nominated for corporate "Wings of Excellence" award for improving and streamlining our mobile testing process<br/>
+                  Nominated for corporate "Wings of Excellence" award for improving and streamlining our mobile testing process
                   </li>
                 </ul>
 
@@ -248,13 +248,28 @@ class App extends Component {
                 Responsibilities:<br/>
                 <ul>
                   <li>
-                  Development of an early access Steam title using C# utilizing the Monogame Framework<br/>
+                  Development of an early access Steam title using C# utilizing the Monogame Framework
                   </li>
                   <li>
-                  Project planning, brainstorming, and driving major releases along with my team members<br/>
+                  Project planning, brainstorming, and driving major releases along with my team members
                   </li>
                   <li>
-                  Representing the game and the studio at game conferences<br/>
+                  Representing the game and the studio at game conferences
+                  </li>
+                  <li>
+                  Driving meetings, business administration, and task management
+                  </li>
+                </ul>
+
+                <br/>
+
+                Proudest Moments:<br/>
+                <ul>
+                  <li>
+                  Released a published game on two major PC platforms
+                  </li>
+                  <li>
+                  Drove a successful Steam Greenlight campaign
                   </li>
                 </ul>
 
@@ -292,7 +307,7 @@ class App extends Component {
           <Grid item xs={4}>
 
           <Card className={classes.card} raised='true'>
-        <CardHeader title="The Island of Eternal Struggle" />
+        <CardHeader title="The Island of Eternal Struggle" subheader="2013-present" />
         <CardContent>
             <Typography>
             Turn based RPG out on Steam Early Access. <br/>
@@ -356,7 +371,7 @@ class App extends Component {
 
           <Grid item xs={4}>
           <Card className={classes.card} raised='true'>
-        <CardHeader title="Meds" />
+        <CardHeader title="Meds" subheader="2013" />
         <CardContent>
             <Typography>
             A breakout-meets-Eternal Darkness mashup on XBLIG.<br/>
@@ -420,10 +435,26 @@ class App extends Component {
           <Grid item xs={4}>
 
           <Card className={classes.card} raised='true'>
-        <CardHeader title="WimbusStudios.com" />
+        <CardHeader title="WimbusStudios.com" subheader="2017" />
         <CardContent>
             <Typography>
-           A website designed with standard HTML/CSS stylings for Wimbus Studios.
+           A website designed with standard HTML/CSS stylings for Wimbus Studios.<br/>
+
+           <br/>
+              Stuff I did:<br/>
+            <ul>
+            <li>Wrote HTML/CSS for the Wimbus Studios site</li>
+            <li>Collaborated with the team to create/publish promotional materials</li>
+            </ul>
+            Links:<br/>
+            <ul>
+            <li><a href="http://www.wimbusstudios.com" target="_blank">Wimbusstudios.com</a></li>
+            </ul>
+              <br/>
+
+
+
+
             </Typography>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
@@ -459,26 +490,6 @@ class App extends Component {
           </Grid>
 
 
-          <Grid item xs={4}>
-          <Card className={classes.card} raised='true'>
-        <CardHeader title="Questline" />
-        <CardContent>
-            <Typography>
-wip
-            </Typography>
-          </CardContent>
-          <CardActions className={classes.actions} disableActionSpacing>
- 
-          <Tooltip title="Solo Project" aria-label="Solo Project" TransitionComponent={Zoom}>
-            <IconButton aria-label="Solo Project">
-            <PersonIcon />
-          </IconButton>
-</Tooltip>
- 
-        </CardActions>
-      </Card> 
-
-          </Grid>
 
         </Grid>
 
@@ -492,7 +503,7 @@ wip
       <Grid container justify='center' spacing={24}>
       <Grid item xs={4}>
           <Card className={classes.card} raised='true'>
-        <CardHeader title="Business Bot DX" />
+        <CardHeader title="Business Bot DX" subheader="2018" />
         <CardContent>
             <Typography>
             A Twitter bot created with NodeJS using Heroku to schedule and tweet randomly generated business jargon. <br/><br/>
@@ -889,19 +900,18 @@ wip
 
          {this.aboutme(classes)}
 
-        <Typography  variant="h4" id="fun_stuff" align='center'>
-          My Projects and Portfolio
-        </Typography>
 
-        {this.projectsportfolios(classes)}
-
-
-        <Typography  variant="h4" id="professional" align='center'>
+         <Typography  variant="h4" id="professional" align='center'>
           Professional Experience
         </Typography>
 
                 {this.professionalexp(classes)}
 
+        <Typography  variant="h4" id="fun_stuff" align='center'>
+          My Projects and Portfolio
+        </Typography>
+
+        {this.projectsportfolios(classes)}
 
         <Typography variant="h4" id="skills_bills" align='center'>
           My skillset
