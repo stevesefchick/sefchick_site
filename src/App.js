@@ -27,6 +27,7 @@ import GroupIcon from '@material-ui/icons/Group';
 import PersonIcon from '@material-ui/icons/Person';
 import DoneIcon from '@material-ui/icons/DoneOutline';
 
+
 const styles = theme=> ({
   root: {
     display: 'flex',
@@ -838,7 +839,28 @@ class App extends Component {
     return(
       <div >
       <Typography>
-        email / linkedin / twitter? / github / other?
+              <Grid container justify='center' spacing={12}>
+          <Grid item xs={4}>
+
+            <Typography>
+                email
+            </Typography>
+      </Grid>
+
+                <Grid item xs={4}>
+
+<Typography>
+    git
+</Typography>
+</Grid>
+
+          <Grid item xs={4}>
+
+<Typography>
+    linkedin
+</Typography>
+</Grid>
+      </Grid>
       </Typography>
 
 
@@ -926,7 +948,7 @@ class App extends Component {
         {this.education(classes)}
 
         <Typography  variant="h4" id="contact" align='center'>
-          contact/follow me!
+          Contact Me
         </Typography>
 
         {this.contactinfo(classes)}
