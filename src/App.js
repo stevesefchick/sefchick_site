@@ -954,6 +954,12 @@ class App extends Component {
         {this.contactinfo(classes)}
 
 
+          <Typography  variant="h6" align='center'>
+          This website was built by Steve Sefchick using <a href="https://reactjs.org/" target="_blank">ReactJS</a> and <a href="https://material-ui.com/" target="_blank">Material-UI</a>.
+          <br/>
+          You can follow me on <a href="https://twitter.com/stevec0re" target="_blank">Twitter</a>, <a href="https://github.com/stevesefchick" target="_blank">GitHub</a> or <a href="https://www.linkedin.com/in/stevesefchick/" target="_blank">LinkedIn</a>.
+          </Typography>
+
       </MuiThemeProvider>
 
       </div>
