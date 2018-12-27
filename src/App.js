@@ -7,7 +7,6 @@ import { CssBaseline } from '@material-ui/core';
 import Chip from '@material-ui/core/Chip';
 import Tooltip from '@material-ui/core/Tooltip';
 import Zoom from '@material-ui/core/Zoom';
-import pink from '@material-ui/core/colors/pink';
 import red from '@material-ui/core/colors/red';
 import Grid from '@material-ui/core/Grid';
 import AppBar from '@material-ui/core/AppBar';
@@ -17,7 +16,6 @@ import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import IconButton from '@material-ui/core/IconButton';
 import CodeIcon from '@material-ui/icons/Code';
 import ArtTrackIcon from '@material-ui/icons/ArtTrack';
@@ -26,7 +24,6 @@ import WebIcon from '@material-ui/icons/Web';
 import GroupIcon from '@material-ui/icons/Group';
 import PersonIcon from '@material-ui/icons/Person';
 import DoneIcon from '@material-ui/icons/DoneOutline';
-import TextField from '@material-ui/core/TextField';
 
 const styles = theme=> ({
   root: {
@@ -181,7 +178,8 @@ class App extends Component {
         <Grid container justify='center' spacing={24}>
           <Grid item xs={4}>
           <Card className={classes.card} raised='true'>
-        <CardHeader title="Wawa, Inc." />
+        <CardHeader title="Wawa, Inc." subheader="2003-present" />
+        <CardMedia component="img" image="./images/cardcontentimages/testcard.png" height="80" title="Wawa" />
         <CardContent>
             <Typography>
                 Over 15 years of experience working in a convenience retail industry, from a retail in-store position to a tenured Business Analyst Position in a customer-facing, digital environment. Currently responsible for the Wawa Mobile App, Wawa.com, and Wawarewards.com.<br/>
@@ -236,7 +234,7 @@ class App extends Component {
             </Grid>
             <Grid item xs={4}>
           <Card className={classes.card} raised='true'>
-        <CardHeader title="Wimbus Studios" />
+        <CardHeader title="Wimbus Studios" subheader="2013-present" />
         <CardContent>
             <Typography>
                 Designed, coded, deployed, and promoted the video game "The Island of Eternal Struggle" with a team of three starting with just an idea. <br/>
