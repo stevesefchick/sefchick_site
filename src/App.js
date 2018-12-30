@@ -179,7 +179,11 @@ class App extends Component {
           <Grid item xs={4}>
           <Card className={classes.card} raised >
         <CardHeader title="Wawa, Inc." subheader="2003-present" />
-        <CardMedia component="img" image="./images/cardcontentimages/testcard.png" height="80" title="Wawa" />
+        <CardMedia 
+        component="img" 
+        image={require('./images/cardcontentimages/wawacard.png')} 
+        height="80" 
+        title="Wawa, Inc." />
         <CardContent>
             <Typography>
                 Over 15 years of experience working in a convenience retail industry, from a retail in-store position to a tenured Business Analyst Position in a customer-facing, digital environment. Currently responsible for the Wawa Mobile App, Wawa.com, and Wawarewards.com.<br/>
@@ -235,6 +239,11 @@ class App extends Component {
             <Grid item xs={4}>
           <Card className={classes.card} raised >
         <CardHeader title="Wimbus Studios" subheader="2013-present" />
+        <CardMedia 
+        component="img" 
+        image={require('./images/cardcontentimages/wimbuscard.png')} 
+        height="80" 
+        title="Wimbus Studios" />
         <CardContent>
             <Typography>
                 Designed, coded, deployed, and promoted the video game "The Island of Eternal Struggle" with a team of three starting with just an idea. <br/>
@@ -307,6 +316,11 @@ class App extends Component {
 
           <Card className={classes.card} raised >
         <CardHeader title="The Island of Eternal Struggle" subheader="2013-present" />
+        <CardMedia 
+        component="img" 
+        image={require('./images/cardcontentimages/iescard.png')} 
+        height="80" 
+        title="The Island of Eternal Struggle" />
         <CardContent>
             <Typography>
             Turn based RPG out on Steam Early Access. <br/>
@@ -371,6 +385,11 @@ class App extends Component {
           <Grid item xs={4}>
           <Card className={classes.card} >
         <CardHeader title="Meds" subheader="2013" />
+        <CardMedia 
+        component="img" 
+        image={require('./images/cardcontentimages/medscard.png')} 
+        height="80" 
+        title="meds" />
         <CardContent>
             <Typography>
             A breakout-meets-Eternal Darkness mashup on XBLIG.<br/>
@@ -441,6 +460,11 @@ class App extends Component {
 
           <Card className={classes.card} >
         <CardHeader title="WimbusStudios.com" subheader="2017" />
+        <CardMedia 
+        component="img" 
+        image={require('./images/cardcontentimages/wimbuscard.png')} 
+        height="80" 
+        title="WimbusStudios.com" />
         <CardContent>
             <Typography>
            A website designed with standard HTML/CSS stylings for Wimbus Studios.<br/>
@@ -509,6 +533,11 @@ class App extends Component {
       <Grid item xs={4}>
           <Card className={classes.card} raised >
         <CardHeader title="Business Bot DX" subheader="2018" />
+        <CardMedia 
+        component="img" 
+        image={require('./images/cardcontentimages/businesscard.png')} 
+        height="80" 
+        title="Business Bot DX" />
         <CardContent>
             <Typography>
             A Twitter bot created with NodeJS using Heroku to schedule and tweet randomly generated business jargon. <br/><br/>
