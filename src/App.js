@@ -1,6 +1,10 @@
-import React, { Component } from 'react';
-import './App.css';
+//stevesefchick.fyi 
+//source code for reactJS project for Steve Sefchick's portfolio site
+//Create by Steve Sefchick
+//2018-2019
 
+//React
+import React, { Component } from 'react';
 
 //material-ui
 import Typography from '@material-ui/core/Typography';
@@ -28,9 +32,22 @@ import GroupIcon from '@material-ui/icons/Group';
 import PersonIcon from '@material-ui/icons/Person';
 import DoneIcon from '@material-ui/icons/DoneOutline';
 
+//CSS
+import './App.css';
 
-//pages
+//standalone pages
 import AboutMe from './sections/aboutme.js';
+import ContactMe from './sections/contactme.js';
+//professional experience
+import ExpWawa from './sections/expwawa.js';
+import ExpWimbus from './sections/expwimbus.js';
+//portfolio
+import PortIES from './sections/portIES.js';
+import PortMeds from './sections/portmeds.js';
+import PortWimbusDotCom from './sections/portwimbusdotcom.js';
+import PortBizBot from './sections/portbizbot.js';
+
+
 
 const styles = theme=> ({
   root: {
@@ -87,15 +104,8 @@ class App extends Component {
     mobileOpen: false
   };
 
-
-  handleExpandClick = () => {
-    this.setState(state => ({ expanded: !state.expanded }));
-  };
-
   aboutme(classes)
   {
-
-
 
     return(
       <div >
@@ -175,48 +185,7 @@ class App extends Component {
         title="Wawa, Inc." />
         <CardContent>
             <Typography>
-                Over 15 years of experience working in a convenience retail industry, from a retail in-store position to a tenured Business Analyst Position in a customer-facing, digital environment. Currently responsible for the Wawa Mobile App, Wawa.com, and Wawarewards.com.<br/>
-
-                <br/>
-                Current Role:<br/>
-                2014-present: Senior Business Analyst - Mobile and Digital Technologies<br/>
-
-                <br/>
-
-                Responsibilities:<br/>
-                <ul>
-                  <li>
-                  Development and creation of thoughtful user stories
-                  </li>
-                  <li>
-                  Development and creation of test plans and test scripts
-                  </li>
-                  <li>
-                  Building and maintaining relationships with the Digital Marketing Team, the Contact Center, Application Management, and a wide array of other business and IT partners
-                  </li>
-                  <li>
-                  Support, problem solving, and deep diving into production challenges
-                  </li>
-                </ul>
-
-                <br/>
-
-                Proudest Moments:<br/>
-                <ul>
-                  <li>
-                  Helped drive initiatives such as the Mobile App launch (and redesign), Mobile Ordering, and In App Payment
-                  </li>
-                  <li>
-                  Nominated for corporate "Wings of Excellence" award for improving and streamlining our mobile testing process
-                  </li>
-                </ul>
-
-
-                <br/>
-                Previous:<br/>
-                2012-2014: Business Analyst - Store Operations<br/>
-                2010-2012: QA Tester<br/>
-                2003-2010: Store Associate<br/>
+                <ExpWawa />
             </Typography>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
@@ -235,41 +204,7 @@ class App extends Component {
         title="Wimbus Studios" />
         <CardContent>
             <Typography>
-                Designed, coded, deployed, and promoted the video game "The Island of Eternal Struggle" with a team of three starting with just an idea. <br/>
-
-                <br/>
-                Current Role:<br/>
-                2013 - present:  Developer/Co-Owner/Wearer of Many Hats<br/>
-                <br/>
-
-                Responsibilities:<br/>
-                <ul>
-                  <li>
-                  Development of an early access Steam title using C# utilizing the Monogame Framework
-                  </li>
-                  <li>
-                  Project planning, brainstorming, and driving major releases along with my team members
-                  </li>
-                  <li>
-                  Representing the game and the studio at game conferences
-                  </li>
-                  <li>
-                  Driving meetings, business administration, and task management
-                  </li>
-                </ul>
-
-                <br/>
-
-                Proudest Moments:<br/>
-                <ul>
-                  <li>
-                  Released a published game on two major PC platforms
-                  </li>
-                  <li>
-                  Drove a successful Steam Greenlight campaign
-                  </li>
-                </ul>
-
+                <ExpWimbus/>
             </Typography>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
@@ -312,27 +247,7 @@ class App extends Component {
         title="The Island of Eternal Struggle" />
         <CardContent>
             <Typography>
-            Turn based RPG out on Steam Early Access. <br/>
-            <br/>
-
-            Stuff I did:<br/>
-            <ul>
-            <li>Coded the entire game using C#/Monogame Framework</li>
-            <li>Assisted in the game design process, especially combat and character class mechanics</li>
-            <li>Built a custom particle effect editor</li>
-            <li>Showcased the game at over a dozen different local gaming events</li>
-            <li>Led the process of establishing the Wimbus Studio business and publishing the game on Steam and itch.io</li>
-            </ul>
-            Links:<br/>
-            <ul>
-            <li><a href="https://store.steampowered.com/app/534240/The_Island_of_Eternal_Struggle/" target="_blank">Steam link</a></li>
-            <li><a href="https://wimbusstudios.itch.io/the-island-of-eternal-struggle" target="_blank">itch.io link</a></li>
-            <li><a href="https://youtu.be/Wr59M17RxNE" target="_blank">Trailer</a></li>
-            <li><a href="http://www.siliconera.com/2014/10/11/nun-viking-discoman-walk-rpg/" target="_blank">Siliconera Preview</a></li>
-            <li><a href="https://www.youtube.com/watch?v=neYHKyXGUHs" target="_blank">CrispyNoodle video interview</a></li>
-            <li><a href="https://www.youtube.com/watch?v=jup2EBn-2Fc" target="_blank">AverageGiants LetsPlay</a></li>
-            </ul>
-              <br/>
+              <PortIES />
             </Typography>
           </CardContent>
           
@@ -381,20 +296,7 @@ class App extends Component {
         title="meds" />
         <CardContent>
             <Typography>
-            A breakout-meets-Eternal Darkness mashup on XBLIG.<br/>
-              <br/>
-              Stuff I did:<br/>
-            <ul>
-            <li>Coded the entire game using C#/XNA Framework</li>
-            <li>Designed the game and contributed a large portion of art assets</li>
-            <li>Published the game on XBLIG</li>
-            </ul>
-            Links:<br/>
-            <ul>
-            <li><a href="https://www.youtube.com/watch?v=Wr5SFGFrlH0" target="_blank">Meds Trailer</a></li>
-            <li><a href="https://www.wired.com/2010/07/meds-xbox-indie/" target="_blank">Wired.com Review</a></li>
-            </ul>
-              <br/>
+              <PortMeds />
             </Typography>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
@@ -456,22 +358,8 @@ class App extends Component {
         title="WimbusStudios.com" />
         <CardContent>
             <Typography>
-           A website designed with standard HTML/CSS stylings for Wimbus Studios.<br/>
 
-           <br/>
-              Stuff I did:<br/>
-            <ul>
-            <li>Wrote HTML/CSS for the Wimbus Studios site</li>
-            <li>Collaborated with the team to create/publish promotional materials</li>
-            </ul>
-            Links:<br/>
-            <ul>
-            <li><a href="http://www.wimbusstudios.com" target="_blank">Wimbusstudios.com</a></li>
-            </ul>
-              <br/>
-
-
-
+              <PortWimbusDotCom />
 
             </Typography>
           </CardContent>
@@ -529,13 +417,7 @@ class App extends Component {
         title="Business Bot DX" />
         <CardContent>
             <Typography>
-            A Twitter bot created with NodeJS using Heroku to schedule and tweet randomly generated business jargon. <br/><br/>
-
-            Links:<br/>
-            <ul>
-            <li><a href="https://twitter.com/BusinessBotDX" target="_blank">@BusinessBotDX</a></li>
-            <li><a href="https://github.com/stevesefchick/business-bot" target="_blank">Git project</a></li>
-            </ul>
+              <PortBizBot />
             </Typography>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
@@ -560,19 +442,10 @@ class App extends Component {
  
         </CardActions>
       </Card> 
-
           </Grid>
-
         </Grid>
 
-
-
-
-
       </Typography>
-
-
-
 
             <br/>
             <br/>
@@ -864,12 +737,9 @@ class App extends Component {
 
 
         <Typography  variant="h6" align='center'>
-          Get in touch! Shoot me an email -  <a href="mailto:stevesefchick@gmail.com?subject=hi steve">stevesefchick at gmail dot com</a>!
-          <br/>
-          You can follow me on <a href="https://twitter.com/stevec0re" target="_blank">Twitter</a>, <a href="https://github.com/stevesefchick" target="_blank">GitHub</a> or <a href="https://www.linkedin.com/in/stevesefchick/" target="_blank">LinkedIn</a>.
-          <br/>
-          This website was built by Steve Sefchick using <a href="https://reactjs.org/" target="_blank">ReactJS</a> and <a href="https://material-ui.com/" target="_blank">Material-UI</a>.
-          <br/>
+
+        <ContactMe />
+
           </Typography>
 
       </div>
