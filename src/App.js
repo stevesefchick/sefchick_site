@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
+
+
+//material-ui
 import Typography from '@material-ui/core/Typography';
 import { createMuiTheme, MuiThemeProvider, withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
@@ -24,6 +27,10 @@ import WebIcon from '@material-ui/icons/Web';
 import GroupIcon from '@material-ui/icons/Group';
 import PersonIcon from '@material-ui/icons/Person';
 import DoneIcon from '@material-ui/icons/DoneOutline';
+
+
+//pages
+import AboutMe from './sections/aboutme.js';
 
 const styles = theme=> ({
   root: {
@@ -69,22 +76,7 @@ const theme = createMuiTheme({
     contrastThreshold: 3,
     tonalOffset: 0.2,
     type: 'dark',
-  },
-  /*
-  expand: {
-    transform: 'rotate(0deg)',
-    transition: theme.transitions.create('transform', {
-      duration: theme.transitions.duration.shortest,
-    }),
-    marginLeft: 'auto',
-    [theme.breakpoints.up('sm')]: {
-      marginRight: -8,
-    },
-  },
-  expandOpen: {
-    transform: 'rotate(180deg)',
-  },
-  */
+  }
 });
 
 
@@ -92,8 +84,7 @@ const theme = createMuiTheme({
 class App extends Component {
 
   state = {
-    mobileOpen: false,
-    state : { expanded: false }
+    mobileOpen: false
   };
 
 
@@ -148,12 +139,10 @@ class App extends Component {
         <CardHeader title="About Me" />
         <CardContent>
             <Typography>
-                I’m a creative maker driven to build amazing things.
-                  I have a varied, but balanced background, with experience in everything from requirements analysis, to design brainstorming, to development and deployment, and just about everything in between.
-                  I love to learn and crave challenge.
-                  <br /><br />
-                  On my spare time, I'm a friendly boy.
-                  <br />
+
+
+                  <AboutMe />
+                  
             </Typography>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
