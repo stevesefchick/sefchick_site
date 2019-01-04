@@ -16,8 +16,8 @@ return(
             </ul>
             Links:<br/>
             <ul>
-            <li><a href="https://www.youtube.com/watch?v=Wr5SFGFrlH0" target="_blank">Meds Trailer</a></li>
-            <li><a href="https://www.wired.com/2010/07/meds-xbox-indie/" target="_blank">Wired.com Review</a></li>
+            <li><a href="https://www.youtube.com/watch?v=Wr5SFGFrlH0" rel="noopener noreferrer" target="_blank">Meds Trailer</a></li>
+            <li><a href="https://www.wired.com/2010/07/meds-xbox-indie/" rel="noopener noreferrer" target="_blank">Wired.com Review</a></li>
             </ul>
     </div>
 );

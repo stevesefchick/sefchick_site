@@ -19,12 +19,12 @@ return(
             </ul>
             Links:<br/>
             <ul>
-            <li><a href="https://store.steampowered.com/app/534240/The_Island_of_Eternal_Struggle/" target="_blank">Steam link</a></li>
-            <li><a href="https://wimbusstudios.itch.io/the-island-of-eternal-struggle" target="_blank">itch.io link</a></li>
-            <li><a href="https://youtu.be/Wr59M17RxNE" target="_blank">Trailer</a></li>
-            <li><a href="http://www.siliconera.com/2014/10/11/nun-viking-discoman-walk-rpg/" target="_blank">Siliconera Preview</a></li>
-            <li><a href="https://www.youtube.com/watch?v=neYHKyXGUHs" target="_blank">CrispyNoodle video interview</a></li>
-            <li><a href="https://www.youtube.com/watch?v=jup2EBn-2Fc" target="_blank">AverageGiants LetsPlay</a></li>
+            <li><a href="https://store.steampowered.com/app/534240/The_Island_of_Eternal_Struggle/" rel="noopener noreferrer" target="_blank">Steam link</a></li>
+            <li><a href="https://wimbusstudios.itch.io/the-island-of-eternal-struggle" rel="noopener noreferrer" target="_blank">itch.io link</a></li>
+            <li><a href="https://youtu.be/Wr59M17RxNE" rel="noopener noreferrer" target="_blank">Trailer</a></li>
+            <li><a href="http://www.siliconera.com/2014/10/11/nun-viking-discoman-walk-rpg/" rel="noopener noreferrer" target="_blank">Siliconera Preview</a></li>
+            <li><a href="https://www.youtube.com/watch?v=neYHKyXGUHs" rel="noopener noreferrer" target="_blank">CrispyNoodle video interview</a></li>
+            <li><a href="https://www.youtube.com/watch?v=jup2EBn-2Fc" rel="noopener noreferrer" target="_blank">AverageGiants LetsPlay</a></li>
             </ul>
     </div>
 );

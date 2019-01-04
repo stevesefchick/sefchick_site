@@ -119,26 +119,17 @@ class App extends Component {
               <Grid container justify='center' spacing={24}>
           <Grid item xs={4}>
 
-            <Typography>
-                Requirements Gathering and Story Creation
-            </Typography>
+            <img src='images/wee/gamedesign.png' alt="Requirements Gathering and Story Creation" />
       </Grid>
 
                 <Grid item xs={4}>
 
-<Typography>
-    Web and Application Development
-</Typography>
+<img src="images/wee/gamedesign.png" alt="Web and Application Development" width={200} height={200} />
 </Grid>
-
           <Grid item xs={4}>
-
-<Typography>
-    Game Design and Development
-</Typography>
+    <img src="images/wee/gamedesign.png" alt="Game Design" width={200} height={200} />
 </Grid>
       </Grid>
-
 
 <br/>
 <br/>
@@ -756,13 +747,14 @@ class App extends Component {
 
 
       <div className="App">
+
       <CssBaseline/>
 
       <MuiThemeProvider theme={theme}>
 
       <AppBar>
         <Toolbar variant="dense">
-        STEVESEFCHICK.FYI -->
+        STEVESEFCHICK.FYI
         <Button variant="outlined" size="large" href="#it_me">about me</Button>
         <Button variant="outlined" size="large" href="#fun_stuff">portfolio</Button>
         <Button variant="outlined" size="large" href="#professional">professional experience</Button>
@@ -786,7 +778,6 @@ class App extends Component {
       </div>
 
 <br/><br/>
-
 
 
         <Typography variant="h4" id="it_me" align='center'>

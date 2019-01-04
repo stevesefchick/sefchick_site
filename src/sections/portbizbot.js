@@ -10,8 +10,8 @@ return(
 
             Links:<br/>
             <ul>
-            <li><a href="https://twitter.com/BusinessBotDX" target="_blank">@BusinessBotDX</a></li>
-            <li><a href="https://github.com/stevesefchick/business-bot" target="_blank">Git project</a></li>
+            <li><a href="https://twitter.com/BusinessBotDX" rel="noopener noreferrer" target="_blank">@BusinessBotDX</a></li>
+            <li><a href="https://github.com/stevesefchick/business-bot" rel="noopener noreferrer" target="_blank">Git project</a></li>
             </ul>
 
     </div>

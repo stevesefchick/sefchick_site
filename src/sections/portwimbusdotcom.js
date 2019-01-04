@@ -16,7 +16,7 @@ return(
  </ul>
  Links:<br/>
  <ul>
- <li><a href="http://www.wimbusstudios.com" target="_blank">Wimbusstudios.com</a></li>
+ <li><a href="http://www.wimbusstudios.com" rel="noopener noreferrer" target="_blank">Wimbusstudios.com</a></li>
  </ul>
 
     </div>
