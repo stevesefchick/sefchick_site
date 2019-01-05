@@ -110,32 +110,11 @@ class App extends Component {
     return(
       <div >
 
-      <br/><br/>
 
       <Typography variant='h6' align='center'>
-      What I Do:
+      I love to make cool stuff!
       </Typography>
 
-        <Grid container justify='center' spacing={24}>
-          <Grid item xs={4} >
-
-            <img class = "reqstory" />
-
-          </Grid>
-          <Grid item xs={4}>
-
-              <img class="webappdev" />
-
-          </Grid>
-          <Grid item xs={4}>
-
-              <img class="gd" />
-              
-          </Grid>
-      </Grid>
-
-<br/>
-<br/>
 
         <Grid container justify='center' spacing={24}>
           <Grid item xs={4}>
