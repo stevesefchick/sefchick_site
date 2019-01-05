@@ -116,19 +116,22 @@ class App extends Component {
       What I Do:
       </Typography>
 
-              <Grid container justify='center' spacing={24}>
+        <Grid container justify='center' spacing={24}>
+          <Grid item xs={4} >
+
+            <img class = "reqstory" />
+
+          </Grid>
           <Grid item xs={4}>
 
-            <img src='images/wee/gamedesign.png' alt="Requirements Gathering and Story Creation" />
-      </Grid>
+              <img class="webappdev" />
 
-                <Grid item xs={4}>
-
-<img src="images/wee/gamedesign.png" alt="Web and Application Development" width={200} height={200} />
-</Grid>
+          </Grid>
           <Grid item xs={4}>
-    <img src="images/wee/gamedesign.png" alt="Game Design" width={200} height={200} />
-</Grid>
+
+              <img class="gd" />
+              
+          </Grid>
       </Grid>
 
 <br/>

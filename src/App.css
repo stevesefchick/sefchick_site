@@ -6,6 +6,29 @@
   */
 }
 
+
+
+.gd {
+  content:url(images/wee/gamedesign.png);
+  width: 200px;
+  height: 180px;
+  alt: "Game Design";
+}
+
+.webappdev {
+  content:url(images/wee/webappdev.png);
+  width: 200px;
+  height: 180px;
+  alt: "Web and Application Development";
+}
+
+.reqstory {
+  content:url(images/wee/reqstory.png);
+  width: 200px;
+  height: 180px;
+  alt: "Requirements Gathering and Story Creation";
+}
+
 a:link{
   color: white;
 }
