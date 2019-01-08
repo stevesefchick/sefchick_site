@@ -108,7 +108,7 @@ class App extends Component {
   {
 
     return(
-      <div >
+      <div style={{ padding: 20}} >
 
 
       <Typography variant='h6' align='center'>
@@ -145,7 +145,7 @@ class App extends Component {
   professionalexp(classes)
   {
     return(
-      <div >
+      <div style={{ padding: 20}} >
 
         <Grid container justify='center' spacing={24}>
           <Grid item xs={4}>
@@ -201,7 +201,7 @@ class App extends Component {
   projectsportfolios(classes)
   {
     return(
-      <div >
+      <div style={{ padding: 20}} >
 
       <Typography variant='h6' align='center'>
       Games
@@ -431,7 +431,7 @@ class App extends Component {
   skillset(classes)
   {
     return(
-      <div >
+      <div style={{ padding: 20}} >
 
         <Grid container justify='center' spacing={24}>
           <Grid item xs={3}>
@@ -657,7 +657,7 @@ class App extends Component {
   education(classes)
   {
     return(
-      <div >
+      <div style={{ padding: 20}} >
 
         <Grid container justify='center' spacing={24}>
           <Grid item xs={4}>
@@ -736,7 +736,7 @@ class App extends Component {
 
       <AppBar>
         <Toolbar variant="dense">
-        STEVESEFCHICK.FYI
+        
         <Button variant="outlined" size="large" href="#it_me">about me</Button>
         <Button variant="outlined" size="large" href="#fun_stuff">portfolio</Button>
         <Button variant="outlined" size="large" href="#professional">professional experience</Button>
@@ -747,15 +747,13 @@ class App extends Component {
       </AppBar>
 
 
-      <div className="AppHeader">
+      <div>
             <CssBaseline/>
 
       <br/><br/><br/><br/>
       <Typography variant="h1" align='center'>
         stevesefchick.fyi
       </Typography>
-
-      <br/><br/><br/>
 
       </div>
 
