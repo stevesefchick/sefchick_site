@@ -46,6 +46,7 @@ import PortIES from './sections/portIES.js';
 import PortMeds from './sections/portmeds.js';
 import PortWimbusDotCom from './sections/portwimbusdotcom.js';
 import PortBizBot from './sections/portbizbot.js';
+import PortLife4Bot from './sections/portlife4bot.js';
 
 
 
@@ -416,6 +417,44 @@ class App extends Component {
         </CardActions>
       </Card> 
           </Grid>
+
+          <Grid item xs={4}>
+          <Card className={classes.card} raised >
+        <CardHeader title="LIFE4 Bot" subheader="2019" />
+        <CardMedia 
+        component="img" 
+        image={require('./images/cardcontentimages/life4card.png')} 
+        height="80" 
+        title="LIFE4 Bot" />
+        <CardContent>
+            <Typography>
+              <PortLife4Bot />
+            </Typography>
+          </CardContent>
+          <CardActions className={classes.actions} disableActionSpacing>
+ 
+          <Tooltip title="Completed Project" aria-label="Completed Project" TransitionComponent={Zoom}>
+            <IconButton aria-label="Completed Project">
+            <DoneIcon />
+          </IconButton>
+          </Tooltip>
+
+          <Tooltip title="Code" aria-label="Code" TransitionComponent={Zoom}>
+            <IconButton aria-label="Code">
+            <CodeIcon />
+          </IconButton>
+          </Tooltip>
+
+          <Tooltip title="Solo project with community feedback" aria-label="Solo project with community feedback" TransitionComponent={Zoom}>
+            <IconButton aria-label="Group Project">
+            <GroupIcon />
+          </IconButton>
+          </Tooltip>
+ 
+        </CardActions>
+      </Card> 
+          </Grid>
+
         </Grid>
 
       </Typography>

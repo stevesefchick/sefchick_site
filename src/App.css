@@ -47,9 +47,6 @@ h1{
 
 .AppHeader {
 
-  background:url(images/spinbg.png);
-  width: 100%;
-
   background:url(images/honeycombbg.jpg);
   -webkit-animation:100s scroll infinite linear;
   -moz-animation:100s scroll infinite linear;
