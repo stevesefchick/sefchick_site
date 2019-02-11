@@ -113,7 +113,7 @@ class App extends Component {
 
 
       <Typography variant='h6' align='center'>
-      I love to make cool stuff!
+      I love to make cool stuff and help others do the same!
       </Typography>
 
 
@@ -515,7 +515,7 @@ class App extends Component {
         <Chip label="C++" color="primary" />
       </Tooltip>
       
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="2+ years, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Flash" color="primary" />
       </Tooltip>
 
@@ -531,24 +531,20 @@ class App extends Component {
         <CardHeader title="Data" />
         <CardContent>
 
-     <Tooltip title="4+ years" aria-label="Add" TransitionComponent={Zoom}>
+     <Tooltip title="5+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="MySQL" color="primary" />
       </Tooltip>
 
-      <Tooltip title="3+ years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="5+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="MongoDB"  color="primary" />
       </Tooltip>
 
-      <Tooltip title="3+ years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="5+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Vertica" color="primary" />
       </Tooltip>
 
-      <Tooltip title="2+ years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="3+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Google Analytics" color="primary" />
-      </Tooltip>
-
-      <Tooltip title="1 year" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="Google Firebase" color="primary" />
       </Tooltip>
 
           </CardContent>
@@ -563,20 +559,20 @@ class App extends Component {
         <CardHeader title="Tools" />
         <CardContent>
 
-      <Tooltip title="2+ years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="2+ years, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Git" color="primary" />
       </Tooltip>
 
-      <Tooltip title="4+ years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="5+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Jira/Confluence" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="8+ years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="MS Office Suite" color="primary" />
       </Tooltip>
 
       <Tooltip title="2+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Slack" color="primary" />
-      </Tooltip>
-
-      <Tooltip title="6+ years" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="MS Office Suite" color="primary" />
       </Tooltip>
 
       <Tooltip title="4+ years" aria-label="Add" TransitionComponent={Zoom}>
@@ -595,7 +591,7 @@ class App extends Component {
         <Chip label="Steam SDK" color="primary" />
       </Tooltip>
 
-      <Tooltip title="1 year" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Butler" color="primary" />
       </Tooltip>
 
@@ -652,13 +648,13 @@ class App extends Component {
         <CardHeader title="Concepts" />
         <CardContent>
 
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="5+ years across multiple projects" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Agile Methodology" color="primary" />
       </Tooltip>
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="8+ years across multiple projects and disciplines" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="SDLC principles" color="primary" />
       </Tooltip>
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="6+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Release Management" color="primary" />
       </Tooltip>
 
@@ -674,7 +670,7 @@ class App extends Component {
         <CardHeader title="Other" />
         <CardContent>
 
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="3+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Sharepoint" color="primary" />
       </Tooltip>
 
@@ -705,8 +701,7 @@ class App extends Component {
         <CardContent>
             <Typography>
            Wilmington University<br/>
-           Graduated in 2018<br/>
-           Graduated with Honor <br/>
+           Graduated in 2018 with Honors<br/>
             </Typography>
           </CardContent>
           <CardActions className={classes.actions} disableActionSpacing>
