@@ -10,7 +10,7 @@ import React, { Component } from 'react';
 import Typography from '@material-ui/core/Typography';
 import { createMuiTheme, MuiThemeProvider, withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import { CssBaseline } from '@material-ui/core';
+import { CssBaseline, Tabs } from '@material-ui/core';
 import Chip from '@material-ui/core/Chip';
 import Tooltip from '@material-ui/core/Tooltip';
 import Zoom from '@material-ui/core/Zoom';
@@ -769,6 +769,7 @@ class App extends Component {
       <MuiThemeProvider theme={theme}>
 
       <AppBar>
+        <Tabs centered>
         <Toolbar variant="dense">
         
         <Button variant="outlined" size="large" href="#it_me">about me</Button>
@@ -778,6 +779,8 @@ class App extends Component {
         <Button variant="outlined" size="large" href="#education">education</Button>
         <Button variant="outlined" size="large" href="#contact">contact</Button>
         </Toolbar>
+        </Tabs>
+
       </AppBar>
 
 
