@@ -17,6 +17,8 @@ return(
             Links:<br/>
             <ul>
             <li><a href="https://twitter.com/LIFE4BOT" rel="noopener noreferrer" target="_blank">@LIFE4BOT</a></li>
+            <li><a href="https://github.com/stevesefchick" rel="noopener noreferrer" target="_blank">Git project</a></li>
+            <li><a href="https://www.life4ddr.com/" rel="noopener noreferrer" target="_blank">LIFE4 official site</a></li>
             </ul>
 
     </div>

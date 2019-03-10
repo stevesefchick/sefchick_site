@@ -610,31 +610,17 @@ class App extends Component {
         <CardHeader title="Interpersonal" />
         <CardContent>
 
-
-
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Communication" color="primary" />
-      </Tooltip>
 
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Problem Solving"  color="primary" />
-      </Tooltip>
 
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Self-Motivation" color="primary" />
-      </Tooltip>
 
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Adaptability" color="primary" />
-      </Tooltip>
 
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Creativity" color="primary" />
-      </Tooltip>
 
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Teamwork" color="primary" />
-      </Tooltip>
 
           </CardContent>
       </Card> 
