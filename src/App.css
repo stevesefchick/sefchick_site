@@ -1,5 +1,7 @@
 .App {
   background-color: #32253f;
+  background:url(images/bg/bg.png);
+  background-size: 100% auto;
   /*padding-left: 210px;
   padding-top: 20px;
   */
