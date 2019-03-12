@@ -656,6 +656,12 @@ class App extends Component {
         <CardHeader title="Other" />
         <CardContent>
 
+      <Tooltip title="5+ years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="Requirements Gathering" color="primary" />
+      </Tooltip>
+      <Tooltip title="4+ years" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="Support/Training Documentation" color="primary" />
+      </Tooltip>
       <Tooltip title="3+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Sharepoint" color="primary" />
       </Tooltip>
