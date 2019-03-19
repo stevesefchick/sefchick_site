@@ -55,7 +55,7 @@ const styles = theme=> ({
     display: 'flex',
   },
   content: {
-    flexGrow: 1,
+    flexGrow: 3,
     backgroundColor: theme.palette.background.primary,
     padding: theme.spacing.unit * 3,
   },
@@ -118,7 +118,7 @@ class App extends Component {
 
 
         <Grid container justify='center' spacing={24}>
-          <Grid item xs={4}>
+          <Grid item sm={4} xs ={8} >
           <Card className={classes.card} raised>
         <CardHeader title="About Me" />
         <CardContent>
@@ -149,7 +149,7 @@ class App extends Component {
       <div style={{ padding: 20}} >
 
         <Grid container justify='center' spacing={24}>
-          <Grid item xs={4}>
+          <Grid item sm={4} xs ={8} >
           <Card className={classes.card} raised >
         <CardHeader title="Wawa, Inc." subheader="2003-present" />
         <CardMedia 
@@ -168,7 +168,7 @@ class App extends Component {
       </Card> 
 
             </Grid>
-            <Grid item xs={4}>
+            <Grid item sm={4} xs ={8} >
           <Card className={classes.card} raised >
         <CardHeader title="Wimbus Studios" subheader="2013-present" />
         <CardMedia 
@@ -210,7 +210,7 @@ class App extends Component {
 
       <Typography>
         <Grid container justify='center' spacing={24}>
-          <Grid item xs={4}>
+          <Grid item sm={4} xs ={8} >
 
           <Card className={classes.card} raised >
         <CardHeader title="The Island of Eternal Struggle" subheader="2013-present" />
@@ -260,7 +260,7 @@ class App extends Component {
           </Grid>
 
 
-          <Grid item xs={4}>
+          <Grid item sm={4} xs ={8} >
           <Card className={classes.card} >
         <CardHeader title="Meds" subheader="2013" />
         <CardMedia 
@@ -321,7 +321,7 @@ class App extends Component {
 
 
       <Grid container justify='center' spacing={24}>
-          <Grid item xs={4}>
+          <Grid item sm={4} xs ={8} >
 
           <Card className={classes.card} >
         <CardHeader title="WimbusStudios.com" subheader="2017" />
@@ -381,7 +381,7 @@ class App extends Component {
 
 
       <Grid container justify='center' spacing={24}>
-      <Grid item xs={4}>
+      <Grid item sm={4} xs ={8} >
           <Card className={classes.card} raised >
         <CardHeader title="Business Bot DX" subheader="2018" />
         <CardMedia 
@@ -418,7 +418,7 @@ class App extends Component {
       </Card> 
           </Grid>
 
-          <Grid item xs={4}>
+          <Grid item sm={4} xs ={8} >
           <Card className={classes.card} raised >
         <CardHeader title="LIFE4 Bot" subheader="2019" />
         <CardMedia 
@@ -473,7 +473,7 @@ class App extends Component {
       <div style={{ padding: 20}} >
 
         <Grid container justify='center' spacing={24}>
-          <Grid item xs={3}>
+          <Grid item sm={3} xs ={4} >
           <Card className={classes.card} raised>
         <CardHeader title="Code" />
         <CardContent>
@@ -526,7 +526,7 @@ class App extends Component {
 
           </Grid>
 
-          <Grid item xs={3}>
+          <Grid item sm={3} xs ={4}>
           <Card className={classes.card} raised >
         <CardHeader title="Data" />
         <CardContent>
@@ -554,7 +554,7 @@ class App extends Component {
           </Grid>
 
 
-         <Grid item xs={3}>
+         <Grid item sm={3} xs ={4}>
           <Card className={classes.card} raised >
         <CardHeader title="Tools" />
         <CardContent>
@@ -605,7 +605,7 @@ class App extends Component {
 
 
 
-   <Grid item xs={3}>
+   <Grid item sm={3} xs ={4}>
           <Card className={classes.card} raised >
         <CardHeader title="Interpersonal" />
         <CardContent>
@@ -629,7 +629,7 @@ class App extends Component {
           </Grid>
 
 
-<Grid item xs={3}>
+<Grid item sm={3} xs ={4}>
           <Card className={classes.card} raised >
         <CardHeader title="Concepts" />
         <CardContent>
@@ -651,7 +651,7 @@ class App extends Component {
           </Grid>
 
 
-      <Grid item xs={3}>
+      <Grid item sm={3} xs ={4}>
           <Card className={classes.card} raised >
         <CardHeader title="Other" />
         <CardContent>
@@ -687,7 +687,7 @@ class App extends Component {
       <div style={{ padding: 20}} >
 
         <Grid container justify='center' spacing={24}>
-          <Grid item xs={4}>
+          <Grid item sm={4} xs ={8} >
           <Card className={classes.card} raised >
         <CardHeader title="Bachelor's Degree in Software Development and Design" />
         <CardContent>
@@ -703,7 +703,7 @@ class App extends Component {
       
       </Grid>
       <br/>
-      <Grid item xs={4}>
+      <Grid item sm={4} xs ={8} >
       <Card className={classes.card} raised >
         <CardHeader title="Associate's Degree in Game Design and Development" />
         <CardContent>
