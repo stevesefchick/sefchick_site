@@ -3,6 +3,15 @@
 //Create by Steve Sefchick
 //2018-2019
 
+//TODO: Gridify Steve image/intro
+//TODO: Scale stevesefchick.fyi
+//TODO: Breakpoint header for mobile
+//TODO: Clean up mobile view
+//TODO: Update About Me
+//TODO: Swap LIFE4 position w/ Biz Bot
+//TODO: Update LIFE4 info
+//TODO: Add icon credits
+
 //React
 import React, { Component } from 'react';
 
@@ -47,8 +56,8 @@ import PortMeds from './sections/portmeds.js';
 import PortWimbusDotCom from './sections/portwimbusdotcom.js';
 import PortBizBot from './sections/portbizbot.js';
 import PortLife4Bot from './sections/portlife4bot.js';
-
-
+//images
+import steveimage from './images/ss_whitefill.png';
 
 const styles = theme=> ({
   root: {
@@ -789,8 +798,11 @@ class App extends Component {
 <br/><br/>
 
 
+        
         <Typography variant="h4" id="it_me" align='center'>
-          Hi, I'm Steve!
+        <img src ={steveimage} alt="it's steve!" width="150" height ="150" />
+
+          Hey there! I'm Steve!
         </Typography>
 
          {this.aboutme(classes)}
