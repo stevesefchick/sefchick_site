@@ -1,16 +1,16 @@
 //stevesefchick.fyi 
 //source code for reactJS project for Steve Sefchick's portfolio site
-//Create by Steve Sefchick
+//Created by Steve Sefchick
 //2018-2019
 
-//TODO: Gridify Steve image/intro
 //TODO: Scale stevesefchick.fyi
 //TODO: Breakpoint header for mobile
 //TODO: Clean up mobile view
 //TODO: Update About Me
-//TODO: Swap LIFE4 position w/ Biz Bot
 //TODO: Update LIFE4 info
 //TODO: Add icon credits
+//TODO: Add a what I'm working on section
+//TODO: Add a link to current resume
 
 //React
 import React, { Component } from 'react';
@@ -120,10 +120,11 @@ class App extends Component {
     return(
       <div style={{ padding: 20}} >
 
-
       <Typography variant='h6' align='center'>
       I love to make cool stuff and help others do the same!
       </Typography>
+
+      <br/>
 
 
         <Grid container justify='center' spacing={24}>
@@ -390,6 +391,46 @@ class App extends Component {
 
 
       <Grid container justify='center' spacing={24}>
+
+
+      <Grid item sm={4} xs ={8} >
+          <Card className={classes.card} raised >
+        <CardHeader title="LIFE4 Bot" subheader="2019" />
+        <CardMedia 
+        component="img" 
+        image={require('./images/cardcontentimages/life4card.png')} 
+        height="80" 
+        title="LIFE4 Bot" />
+        <CardContent>
+            <Typography>
+              <PortLife4Bot />
+            </Typography>
+          </CardContent>
+          <CardActions className={classes.actions} disableActionSpacing>
+ 
+          <Tooltip title="Completed Project" aria-label="Completed Project" TransitionComponent={Zoom}>
+            <IconButton aria-label="Completed Project">
+            <DoneIcon />
+          </IconButton>
+          </Tooltip>
+
+          <Tooltip title="Code" aria-label="Code" TransitionComponent={Zoom}>
+            <IconButton aria-label="Code">
+            <CodeIcon />
+          </IconButton>
+          </Tooltip>
+
+          <Tooltip title="Solo project with community feedback" aria-label="Solo project with community feedback" TransitionComponent={Zoom}>
+            <IconButton aria-label="Group Project">
+            <GroupIcon />
+          </IconButton>
+          </Tooltip>
+ 
+        </CardActions>
+      </Card> 
+          </Grid>
+
+
       <Grid item sm={4} xs ={8} >
           <Card className={classes.card} raised >
         <CardHeader title="Business Bot DX" subheader="2018" />
@@ -427,42 +468,6 @@ class App extends Component {
       </Card> 
           </Grid>
 
-          <Grid item sm={4} xs ={8} >
-          <Card className={classes.card} raised >
-        <CardHeader title="LIFE4 Bot" subheader="2019" />
-        <CardMedia 
-        component="img" 
-        image={require('./images/cardcontentimages/life4card.png')} 
-        height="80" 
-        title="LIFE4 Bot" />
-        <CardContent>
-            <Typography>
-              <PortLife4Bot />
-            </Typography>
-          </CardContent>
-          <CardActions className={classes.actions} disableActionSpacing>
- 
-          <Tooltip title="Completed Project" aria-label="Completed Project" TransitionComponent={Zoom}>
-            <IconButton aria-label="Completed Project">
-            <DoneIcon />
-          </IconButton>
-          </Tooltip>
-
-          <Tooltip title="Code" aria-label="Code" TransitionComponent={Zoom}>
-            <IconButton aria-label="Code">
-            <CodeIcon />
-          </IconButton>
-          </Tooltip>
-
-          <Tooltip title="Solo project with community feedback" aria-label="Solo project with community feedback" TransitionComponent={Zoom}>
-            <IconButton aria-label="Group Project">
-            <GroupIcon />
-          </IconButton>
-          </Tooltip>
- 
-        </CardActions>
-      </Card> 
-          </Grid>
 
         </Grid>
 
@@ -797,14 +802,18 @@ class App extends Component {
 
 <br/><br/>
 
-
-        
-        <Typography variant="h4" id="it_me" align='center'>
-        <img src ={steveimage} alt="it's steve!" width="150" height ="150" />
-
-          Hey there! I'm Steve!
+      <Grid container justify='center' spacing={8}>
+      <Grid item sm={2} xs ={4} >
+      <img src ={steveimage} alt="it's steve!" width="175" height ="175" />
+      </Grid>
+      <Grid item sm={2} xs ={4} >
+      <Typography variant="h4" id="it_me" align='center'>
+      Hey there!<br/>
+       I'm Steve!
         </Typography>
-
+      </Grid>
+      </Grid>
+        
          {this.aboutme(classes)}
 
 
