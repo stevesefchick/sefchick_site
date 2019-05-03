@@ -5,7 +5,6 @@
 
 //TODO: Scale stevesefchick.fyi
 //TODO: Breakpoint header for mobile
-//TODO: Clean up mobile view
 //TODO: Update About Me
 //TODO: Update LIFE4 info
 //TODO: Add icon credits
@@ -44,6 +43,9 @@ import DoneIcon from '@material-ui/icons/DoneOutline';
 //CSS
 import './App.css';
 
+//breakpoint stuff
+import withWith from '@material-ui/core/withWidth';
+
 //standalone pages
 import AboutMe from './sections/aboutme.js';
 import ContactMe from './sections/contactme.js';
@@ -76,13 +78,14 @@ const styles = theme=> ({
   },
 });
 
+
 const theme = createMuiTheme({
   typography: {
     useNextVariants: true,
     fontFamily: [
       'Dosis',
     ].join(','),
-    fontSize: 16,
+    htmlFontSize: 12,
     
   },
   drawer: {
@@ -128,7 +131,7 @@ class App extends Component {
 
 
         <Grid container justify='center' spacing={24}>
-          <Grid item sm={4} xs ={8} >
+          <Grid item sm={4} xs ={10} >
           <Card className={classes.card} raised>
         <CardHeader title="About Me" />
         <CardContent>
@@ -159,7 +162,7 @@ class App extends Component {
       <div style={{ padding: 20}} >
 
         <Grid container justify='center' spacing={24}>
-          <Grid item sm={4} xs ={8} >
+          <Grid item sm={4} xs ={10} >
           <Card className={classes.card} raised >
         <CardHeader title="Wawa, Inc." subheader="2003-present" />
         <CardMedia 
@@ -178,7 +181,7 @@ class App extends Component {
       </Card> 
 
             </Grid>
-            <Grid item sm={4} xs ={8} >
+            <Grid item sm={4} xs ={10} >
           <Card className={classes.card} raised >
         <CardHeader title="Wimbus Studios" subheader="2013-present" />
         <CardMedia 
@@ -220,7 +223,7 @@ class App extends Component {
 
       <Typography>
         <Grid container justify='center' spacing={24}>
-          <Grid item sm={4} xs ={8} >
+          <Grid item sm={4} xs ={10} >
 
           <Card className={classes.card} raised >
         <CardHeader title="The Island of Eternal Struggle" subheader="2013-present" />
@@ -270,7 +273,7 @@ class App extends Component {
           </Grid>
 
 
-          <Grid item sm={4} xs ={8} >
+          <Grid item sm={4} xs ={10} >
           <Card className={classes.card} >
         <CardHeader title="Meds" subheader="2013" />
         <CardMedia 
@@ -331,7 +334,7 @@ class App extends Component {
 
 
       <Grid container justify='center' spacing={24}>
-          <Grid item sm={4} xs ={8} >
+          <Grid item sm={4} xs ={10} >
 
           <Card className={classes.card} >
         <CardHeader title="WimbusStudios.com" subheader="2017" />
@@ -393,7 +396,7 @@ class App extends Component {
       <Grid container justify='center' spacing={24}>
 
 
-      <Grid item sm={4} xs ={8} >
+      <Grid item sm={4} xs ={10} >
           <Card className={classes.card} raised >
         <CardHeader title="LIFE4 Bot" subheader="2019" />
         <CardMedia 
@@ -431,7 +434,7 @@ class App extends Component {
           </Grid>
 
 
-      <Grid item sm={4} xs ={8} >
+      <Grid item sm={4} xs ={10} >
           <Card className={classes.card} raised >
         <CardHeader title="Business Bot DX" subheader="2018" />
         <CardMedia 
@@ -487,7 +490,7 @@ class App extends Component {
       <div style={{ padding: 20}} >
 
         <Grid container justify='center' spacing={24}>
-          <Grid item sm={3} xs ={4} >
+          <Grid item sm={3} xs ={10} >
           <Card className={classes.card} raised>
         <CardHeader title="Code" />
         <CardContent>
@@ -540,7 +543,7 @@ class App extends Component {
 
           </Grid>
 
-          <Grid item sm={3} xs ={4}>
+          <Grid item sm={3} xs ={10}>
           <Card className={classes.card} raised >
         <CardHeader title="Data" />
         <CardContent>
@@ -568,7 +571,7 @@ class App extends Component {
           </Grid>
 
 
-         <Grid item sm={3} xs ={4}>
+         <Grid item sm={3} xs ={10}>
           <Card className={classes.card} raised >
         <CardHeader title="Tools" />
         <CardContent>
@@ -619,7 +622,7 @@ class App extends Component {
 
 
 
-   <Grid item sm={3} xs ={4}>
+   <Grid item sm={3} xs ={10}>
           <Card className={classes.card} raised >
         <CardHeader title="Interpersonal" />
         <CardContent>
@@ -643,7 +646,7 @@ class App extends Component {
           </Grid>
 
 
-<Grid item sm={3} xs ={4}>
+<Grid item sm={3} xs ={10}>
           <Card className={classes.card} raised >
         <CardHeader title="Concepts" />
         <CardContent>
@@ -665,7 +668,7 @@ class App extends Component {
           </Grid>
 
 
-      <Grid item sm={3} xs ={4}>
+      <Grid item sm={3} xs ={10}>
           <Card className={classes.card} raised >
         <CardHeader title="Other" />
         <CardContent>
@@ -701,7 +704,7 @@ class App extends Component {
       <div style={{ padding: 20}} >
 
         <Grid container justify='center' spacing={24}>
-          <Grid item sm={4} xs ={8} >
+          <Grid item sm={4} xs ={10} >
           <Card className={classes.card} raised >
         <CardHeader title="Bachelor's Degree in Software Development and Design" />
         <CardContent>
@@ -717,7 +720,7 @@ class App extends Component {
       
       </Grid>
       <br/>
-      <Grid item sm={4} xs ={8} >
+      <Grid item sm={4} xs ={10} >
       <Card className={classes.card} raised >
         <CardHeader title="Associate's Degree in Game Design and Development" />
         <CardContent>
