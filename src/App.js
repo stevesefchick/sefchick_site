@@ -5,9 +5,6 @@
 
 //TODO: Scale stevesefchick.fyi
 //TODO: Breakpoint header for mobile
-//TODO: Update About Me
-//TODO: Update LIFE4 info
-//TODO: Add icon credits
 //TODO: Add a what I'm working on section
 //TODO: Add a link to current resume
 
