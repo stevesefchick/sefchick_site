@@ -3,8 +3,6 @@
 //Created by Steve Sefchick
 //2018-2019
 
-//TODO: Scale stevesefchick.fyi
-//TODO: Breakpoint header for mobile
 //TODO: Add a what I'm working on section
 //TODO: Add a link to current resume
 
@@ -36,12 +34,14 @@ import WebIcon from '@material-ui/icons/Web';
 import GroupIcon from '@material-ui/icons/Group';
 import PersonIcon from '@material-ui/icons/Person';
 import DoneIcon from '@material-ui/icons/DoneOutline';
+import MenuIcon from '@material-ui/icons/Menu';
+import Drawer from '@material-ui/core/Drawer';
 
 //CSS
 import './App.css';
 
 //breakpoint stuff
-import withWith from '@material-ui/core/withWidth';
+import Hidden from '@material-ui/core/Hidden';
 
 //standalone pages
 import AboutMe from './sections/aboutme.js';
@@ -57,6 +57,8 @@ import PortBizBot from './sections/portbizbot.js';
 import PortLife4Bot from './sections/portlife4bot.js';
 //images
 import steveimage from './images/ss_whitefill.png';
+
+
 
 const styles = theme=> ({
   root: {
@@ -774,6 +776,27 @@ class App extends Component {
 
       <MuiThemeProvider theme={theme}>
 
+<Hidden mdUp>
+
+<AppBar>
+<Tabs centered>
+
+<Toolbar variant="dense">
+
+<Typography variant="h5">
+            stevesefchick.fyi
+</Typography>
+
+</Toolbar>
+</Tabs>
+
+</AppBar>
+
+
+</Hidden>
+
+
+<Hidden mdDown>
       <AppBar>
         <Tabs centered>
         <Toolbar variant="dense">
@@ -788,15 +811,24 @@ class App extends Component {
         </Tabs>
 
       </AppBar>
-
+</Hidden>
 
       <div>
             <CssBaseline/>
 
       <br/><br/><br/><br/>
+
+      <Hidden mdDown>
       <Typography variant="h1" align='center'>
         stevesefchick.fyi
       </Typography>
+      </Hidden>
+      <Hidden mdUp>
+      <Typography variant="h3" align='center'>
+        stevesefchick.fyi
+      </Typography>
+      </Hidden>
+
 
       </div>
 
@@ -806,7 +838,8 @@ class App extends Component {
       <Grid item sm={2} xs ={4} >
       <img src ={steveimage} alt="it's steve!" width="175" height ="175" />
       </Grid>
-      <Grid item sm={2} xs ={4} >
+      <Grid item sm={2} xs ={2} >
+
       <Typography variant="h4" id="it_me" align='center'>
       Hey there!<br/>
        I'm Steve!
@@ -841,7 +874,7 @@ class App extends Component {
 
         {this.education(classes)}
 
-        <Typography  variant="h4" id="contact" align='center'>
+        <Typography  variant="h3" id="contact" align='center'>
           Contact Me
         </Typography>
 
