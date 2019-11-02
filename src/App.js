@@ -34,8 +34,6 @@ import WebIcon from '@material-ui/icons/Web';
 import GroupIcon from '@material-ui/icons/Group';
 import PersonIcon from '@material-ui/icons/Person';
 import DoneIcon from '@material-ui/icons/DoneOutline';
-import MenuIcon from '@material-ui/icons/Menu';
-import Drawer from '@material-ui/core/Drawer';
 
 //CSS
 import './App.css';
