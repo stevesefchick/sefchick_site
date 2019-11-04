@@ -11,8 +11,8 @@ return(
           Stuff I did:<br/>
             <ul>
             <li>Developed bot logic using Node.js and took advantage of several libraries to utilize Twitter and Discord functionality</li>
-            <li>Worked with the LIFE4 Community to continue to develop features and improvements</li>
-            <li>Bot currently has a following of 200+ (~40% of all enrolled players).</li>
+            <li>Working with the LIFE4 Community to continue to develop features and improvements</li>
+            <li>Bot currently has a following of 300+ (~50% of all enrolled players).</li>
             </ul>
 
             Links:<br/>

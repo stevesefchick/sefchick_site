@@ -53,6 +53,7 @@ import PortMeds from './sections/portmeds.js';
 import PortWimbusDotCom from './sections/portwimbusdotcom.js';
 import PortBizBot from './sections/portbizbot.js';
 import PortLife4Bot from './sections/portlife4bot.js';
+import PortFakeDDRBot from './sections/portfakeddrbot.js';
 //images
 import steveimage from './images/ss_whitefill.png';
 
@@ -429,6 +430,45 @@ class App extends Component {
         </CardActions>
       </Card> 
           </Grid>
+
+
+          <Grid item sm={4} xs ={10} >
+          <Card className={classes.card} raised >
+        <CardHeader title="Fake DDR Song Bot" subheader="2019" />
+        <CardMedia 
+        component="img" 
+        image={require('./images/cardcontentimages/ddrbotcard.png')} 
+        height="80" 
+        title="Fake DDR Song Bot" />
+        <CardContent>
+            <Typography>
+              <PortFakeDDRBot />
+            </Typography>
+          </CardContent>
+          <CardActions className={classes.actions} disableActionSpacing>
+ 
+          <Tooltip title="Completed Project" aria-label="Completed Project" TransitionComponent={Zoom}>
+            <IconButton aria-label="Completed Project">
+            <DoneIcon />
+          </IconButton>
+          </Tooltip>
+
+          <Tooltip title="Code" aria-label="Code" TransitionComponent={Zoom}>
+            <IconButton aria-label="Code">
+            <CodeIcon />
+          </IconButton>
+          </Tooltip>
+
+          <Tooltip title="Solo Project" aria-label="Solo Project" TransitionComponent={Zoom}>
+            <IconButton aria-label="Solo Project">
+            <PersonIcon />
+          </IconButton>
+          </Tooltip>
+ 
+        </CardActions>
+      </Card> 
+          </Grid>
+
 
 
       <Grid item sm={4} xs ={10} >
