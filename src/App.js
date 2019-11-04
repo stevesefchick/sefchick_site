@@ -617,6 +617,14 @@ class App extends Component {
         <Chip label="Git" color="primary" />
       </Tooltip>
 
+      <Tooltip title="1 year" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="Yarn" color="primary" />
+      </Tooltip>
+
+      <Tooltip title="1 year" aria-label="Add" TransitionComponent={Zoom}>
+        <Chip label="npm" color="primary" />
+      </Tooltip>
+
       <Tooltip title="5+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Jira/Confluence" color="primary" />
       </Tooltip>
