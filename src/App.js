@@ -396,7 +396,7 @@ class App extends Component {
 
       <Grid item sm={4} xs ={10} >
           <Card className={classes.card} raised >
-        <CardHeader title="LIFE4 Bot" subheader="2019" />
+        <CardHeader title="LIFE4 Bot" subheader="2019-present" />
         <CardMedia 
         component="img" 
         image={require('./images/cardcontentimages/life4card.png')} 
