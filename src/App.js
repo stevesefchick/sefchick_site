@@ -1,17 +1,21 @@
 import React from 'react'
-//import logo from './logo.svg'
 import './App.css'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import SideNav from './SideNav.js'
-import MainNav from './MainNav'
+import MainNav from './Home.js'
 
 function App() {
     return (
 
-        <div className="container">
-            <SideNav name = "sideboy" />
-            <MainNav name = "mainboy"/>
-        </div>
 
+        <Router>
+
+            <SideNav />
+            <Switch>
+                <Route path='/home' component={MainNav} />
+            </Switch>
+        </Router>
+        
     )
 
 }
