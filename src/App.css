@@ -8,7 +8,7 @@
 }
 
 .home {
+  padding-left: 200px;
   background-color: rgb(17, 118, 131);
-  display: flex;
   font-size: 3rem;
 }
