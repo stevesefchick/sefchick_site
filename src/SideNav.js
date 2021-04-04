@@ -7,8 +7,9 @@ return (
 
 <nav className="navbar">
    <ul className="nav-menu-items">
-      <li key="home" className="nav-text">
-         <Link to='/home'>
+
+      <li key="about" className="nav-text">
+         <Link to='/about'>
             <span>about</span>
          </Link>
       </li>
