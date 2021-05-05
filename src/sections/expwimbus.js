@@ -39,6 +39,9 @@ return(
         <li>
         Drove a successful Steam Greenlight campaign
         </li>
+        <li>
+        Attended dozens of industry events to showcase the game, including Philly Tech Week and TooManyGames
+        </li>
         </ul>
     </div>
 );

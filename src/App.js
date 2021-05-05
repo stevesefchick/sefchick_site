@@ -30,7 +30,7 @@ import IconButton from '@material-ui/core/IconButton';
 import CodeIcon from '@material-ui/icons/Code';
 import ArtTrackIcon from '@material-ui/icons/ArtTrack';
 import GamesIcon from '@material-ui/icons/Games';
-import WebIcon from '@material-ui/icons/Web';
+//import WebIcon from '@material-ui/icons/Web';
 import GroupIcon from '@material-ui/icons/Group';
 import PersonIcon from '@material-ui/icons/Person';
 import DoneIcon from '@material-ui/icons/DoneOutline';
@@ -50,10 +50,11 @@ import ExpWimbus from './sections/expwimbus.js';
 //portfolio
 import PortIES from './sections/portIES.js';
 import PortMeds from './sections/portmeds.js';
-import PortWimbusDotCom from './sections/portwimbusdotcom.js';
+//import PortWimbusDotCom from './sections/portwimbusdotcom.js';
 import PortBizBot from './sections/portbizbot.js';
 import PortLife4Bot from './sections/portlife4bot.js';
 import PortFakeDDRBot from './sections/portfakeddrbot.js';
+import PortTheMark from './sections/portTheMark.js';
 //images
 import steveimage from './images/ss_whitefill.png';
 
@@ -273,6 +274,47 @@ class App extends Component {
 
           <Grid item sm={4} xs ={10} >
           <Card className={classes.card} >
+        <CardHeader title="The Mark (Working Title)" subheader="2020-2021" />
+        <CardMedia 
+        component="img" 
+        image={require('./images/cardcontentimages/markcard.png')} 
+        height="80" 
+        title="themark" />
+        <CardContent>
+            <Typography>
+              <PortTheMark />
+            </Typography>
+          </CardContent>
+          <CardActions className={classes.actions} disableActionSpacing>
+ 
+
+<Tooltip title="Code" aria-label="Code" TransitionComponent={Zoom}>
+            <IconButton aria-label="Code">
+            <CodeIcon />
+          </IconButton>
+</Tooltip>
+
+<Tooltip title="Design" aria-label="Design" TransitionComponent={Zoom}>
+            <IconButton aria-label="Design">
+            <ArtTrackIcon />
+          </IconButton>
+</Tooltip>
+
+<Tooltip title="Game Development" aria-label="Game Development" TransitionComponent={Zoom}>
+            <IconButton aria-label="Game Development">
+            <GamesIcon />
+          </IconButton>
+</Tooltip>
+
+
+
+        </CardActions>
+      </Card> 
+
+          </Grid>
+
+          <Grid item sm={4} xs ={10} >
+          <Card className={classes.card} >
         <CardHeader title="Meds" subheader="2013" />
         <CardMedia 
         component="img" 
@@ -326,68 +368,9 @@ class App extends Component {
 
       <br/>
       
-      <Typography variant='h6' align='center'>
-      Web
-      </Typography>
-
-
-      <Grid container justify='center' spacing={24}>
-          <Grid item sm={4} xs ={10} >
-
-          <Card className={classes.card} >
-        <CardHeader title="WimbusStudios.com" subheader="2017" />
-        <CardMedia 
-        component="img" 
-        image={require('./images/cardcontentimages/wimbuscard.png')} 
-        height="80" 
-        title="WimbusStudios.com" />
-        <CardContent>
-            <Typography>
-
-              <PortWimbusDotCom />
-
-            </Typography>
-          </CardContent>
-          <CardActions className={classes.actions} disableActionSpacing>
- 
- 
-          <Tooltip title="Completed Project" aria-label="Completed Project" TransitionComponent={Zoom}>
-            <IconButton aria-label="Completed Project">
-            <DoneIcon />
-          </IconButton>
-          </Tooltip>
-
-          <Tooltip title="Web Development" aria-label="Web Development" TransitionComponent={Zoom}>
-            <IconButton aria-label="Web Development">
-            <WebIcon />
-          </IconButton>
-          </Tooltip>
-
-          <Tooltip title="Code" aria-label="Code" TransitionComponent={Zoom}>
-            <IconButton aria-label="Code">
-            <CodeIcon />
-          </IconButton>
-          </Tooltip>
-
-          <Tooltip title="Group Project" aria-label="Group Project" TransitionComponent={Zoom}>
-            <IconButton aria-label="Group Project">
-            <GroupIcon />
-          </IconButton>
-          </Tooltip>
-
-        </CardActions>
-      </Card> 
-
-          </Grid>
-
-
-
-        </Grid>
-
-      <br />
 
       <Typography variant='h6' align='center'>
-      Other
+      Bots/Other
       </Typography>
 
 
@@ -533,7 +516,7 @@ class App extends Component {
         <CardContent>
 
 
-<Tooltip title="6+ years, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
+<Tooltip title="7+ years, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="C#" color="primary" />
       </Tooltip>
 
@@ -541,19 +524,19 @@ class App extends Component {
         <Chip label="Javascript" color="primary" />
       </Tooltip>
 
-      <Tooltip title="1 year, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="2+ years, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="ReactJS"  color="primary" />
       </Tooltip>
 
-      <Tooltip title="2+ years, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="3+ years, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Node.js" color="primary" />
       </Tooltip>
 
-      <Tooltip title="8+ years, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="10+ years, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="HTML/CSS" color="primary" />
       </Tooltip>
 
-      <Tooltip title="2+ years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="4+ years, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="HLSL"  color="primary" />
       </Tooltip>
 
@@ -561,11 +544,11 @@ class App extends Component {
         <Chip label="PHP" color="primary" />
       </Tooltip>
 
-      <Tooltip title="3+ years, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="3+ years, primarily schoolwork" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Java" color="primary" />
       </Tooltip>
 
-      <Tooltip title="1 year, primarily schoolwork" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="1+ years, primarily schoolwork" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="C++" color="primary" />
       </Tooltip>
       
@@ -585,19 +568,19 @@ class App extends Component {
         <CardHeader title="Data" />
         <CardContent>
 
-     <Tooltip title="5+ years" aria-label="Add" TransitionComponent={Zoom}>
+     <Tooltip title="7+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="MySQL" color="primary" />
       </Tooltip>
 
-      <Tooltip title="5+ years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="7+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="MongoDB"  color="primary" />
       </Tooltip>
 
-      <Tooltip title="5+ years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="7+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Vertica" color="primary" />
       </Tooltip>
 
-      <Tooltip title="3+ years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="5+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Google Analytics" color="primary" />
       </Tooltip>
 
@@ -613,47 +596,43 @@ class App extends Component {
         <CardHeader title="Tools" />
         <CardContent>
 
-      <Tooltip title="2+ years, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="4+ years, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Git" color="primary" />
       </Tooltip>
 
-      <Tooltip title="1 year" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="2+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Yarn" color="primary" />
       </Tooltip>
 
-      <Tooltip title="1 year" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="2+ years, multiple projects" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="npm" color="primary" />
       </Tooltip>
 
-      <Tooltip title="5+ years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="8+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Jira/Confluence" color="primary" />
       </Tooltip>
 
-      <Tooltip title="8+ years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="10+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="MS Office Suite" color="primary" />
       </Tooltip>
 
-      <Tooltip title="2+ years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="4+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Slack" color="primary" />
       </Tooltip>
 
-      <Tooltip title="4+ years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="6+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Postman" color="primary" />
       </Tooltip>
 
-      <Tooltip title="2+ years" aria-label="Add" TransitionComponent={Zoom}>
-        <Chip label="QA Symphony" color="primary" />
-      </Tooltip>
-
-      <Tooltip title="6+ years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="7+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="GIMP" color="primary" />
       </Tooltip>
 
-      <Tooltip title="2+ years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="4+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Steam SDK" color="primary" />
       </Tooltip>
 
-      <Tooltip title="2 years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="3+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Butler" color="primary" />
       </Tooltip>
 
@@ -696,13 +675,13 @@ class App extends Component {
         <CardHeader title="Concepts" />
         <CardContent>
 
-      <Tooltip title="5+ years across multiple projects" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="7+ years across multiple projects" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Agile Methodology" color="primary" />
       </Tooltip>
-      <Tooltip title="8+ years across multiple projects and disciplines" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="10+ years across multiple projects and disciplines" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="SDLC principles" color="primary" />
       </Tooltip>
-      <Tooltip title="6+ years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="8+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Release Management" color="primary" />
       </Tooltip>
 
@@ -718,13 +697,13 @@ class App extends Component {
         <CardHeader title="Other" />
         <CardContent>
 
-      <Tooltip title="5+ years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="6+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Requirements Gathering" color="primary" />
       </Tooltip>
-      <Tooltip title="4+ years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="5+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Support/Training Documentation" color="primary" />
       </Tooltip>
-      <Tooltip title="3+ years" aria-label="Add" TransitionComponent={Zoom}>
+      <Tooltip title="4+ years" aria-label="Add" TransitionComponent={Zoom}>
         <Chip label="Sharepoint" color="primary" />
       </Tooltip>
 

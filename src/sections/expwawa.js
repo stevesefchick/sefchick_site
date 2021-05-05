@@ -21,7 +21,7 @@ return(
         Development and creation of thoughtful user stories
         </li>
         <li>
-        Development and creation of test plans and test scripts
+        Managing and driving the current mobile landscape release train and rollouts
         </li>
         <li>
         Building and maintaining relationships with the Digital Marketing Team, the Contact Center, Application Management, and a wide array of other business and IT partners
@@ -36,7 +36,7 @@ return(
         Proudest Moments:<br/>
         <ul>
         <li>
-        Helped drive initiatives such as the Mobile App launch (and redesign), Mobile Ordering, and In App Payment
+        Helped drive initiatives such as the Mobile App launch (and redesign), Mobile Ordering, payment integrations, and In App Delivery
         </li>
         <li>
         Nominated for corporate "Wings of Excellence" award for improving and streamlining our mobile testing process
