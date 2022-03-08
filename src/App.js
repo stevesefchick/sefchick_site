@@ -57,7 +57,7 @@ import PortFakeDDRBot from './sections/portfakeddrbot.js';
 import PortTheMark from './sections/portTheMark.js';
 //images
 import steveimage from './images/ss_whitefill.png';
-
+//<img src ={steveimage} alt="it's steve!" width="250" height ="250" />
 
 
 const styles = theme=> ({
@@ -67,13 +67,16 @@ const styles = theme=> ({
   content: {
     flexGrow: 3,
     backgroundColor: theme.palette.background.primary,
-    padding: theme.spacing.unit * 3,
+    padding: theme.spacing.unit * 2,
   },
   drawerPaper: {
     width: 180,
   },
   card: {
     maxWidth: 500,
+  },
+  cardlong: {
+    //maxWidth:1000,
   },
 });
 
@@ -120,13 +123,14 @@ class App extends Component {
   {
 
     return(
-      <div style={{ padding: 20}} >
+      <div style={{ padding: 10}} >
 
 
 
         <Grid container justify='center' spacing={8}>
-          <Grid item sm={4} xs ={10} >
-          <Card className={classes.card} raised>
+
+          <Grid item sm={10} xs ={10}>
+          <Card className={classes.cardlong} justify='center' raised>
         <CardHeader title="About Me" />
         <CardContent>
             <Typography>
@@ -816,7 +820,7 @@ class App extends Component {
 </Hidden>
 
 
-<Hidden mdDown>
+<Hidden smDown>
       <AppBar>
         <Tabs centered>
         <Toolbar variant="dense">
@@ -838,34 +842,16 @@ class App extends Component {
 
       <br/><br/><br/><br/>
 
-      <Hidden mdDown>
+      <Hidden smDown>
       <Typography variant="h1" align='center'>
         stevesefchick.fyi
       </Typography>
       </Hidden>
-      <Hidden mdUp>
-      <Typography variant="h3" align='center'>
-        stevesefchick.fyi
-      </Typography>
-      </Hidden>
-
 
       </div>
 
 <br/><br/>
 
-      <Grid container justify='center' spacing={8}>
-      <Grid item sm={2} xs ={4} >
-      <img src ={steveimage} alt="it's steve!" width="175" height ="175" />
-      </Grid>
-      <Grid item sm={2} xs ={2} >
-
-      <Typography variant="h4" id="it_me" align='center'>
-      Hey there!<br/>
-       I'm Steve!
-        </Typography>
-      </Grid>
-      </Grid>
         
          {this.aboutme(classes)}
 
