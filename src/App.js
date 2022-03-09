@@ -5,9 +5,12 @@
 
 //TODO: Add a what I'm working on section
 //TODO: Add a link to current resume
+//TODO: Add link to Wawa
 
 //React
 import React, { Component } from 'react';
+//Particles
+//import Particles from "react-tsparticles";
 
 //material-ui
 import Typography from '@material-ui/core/Typography';
@@ -73,7 +76,10 @@ const styles = theme=> ({
     width: 180,
   },
   card: {
-    maxWidth: 500,
+    maxWidth: 600,
+  },
+  wawacard: {
+    maxWidth: 900,
   },
   cardlong: {
     //maxWidth:1000,
@@ -112,12 +118,12 @@ const theme = createMuiTheme({
 });
 
 
-
 class App extends Component {
 
   state = {
     mobileOpen: false
   };
+
 
   aboutme(classes)
   {
@@ -160,8 +166,8 @@ class App extends Component {
       <div style={{ padding: 20}} >
 
         <Grid container justify='center' spacing={24}>
-          <Grid item sm={4} xs ={10} >
-          <Card className={classes.card} raised >
+          <Grid item sm={5} xs ={10} >
+          <Card className={classes.wawacard} raised >
         <CardHeader title="Wawa, Inc." subheader="2003-present" />
         <CardMedia 
         component="img" 
@@ -178,24 +184,6 @@ class App extends Component {
         </CardActions>
       </Card> 
 
-            </Grid>
-            <Grid item sm={4} xs ={10} >
-          <Card className={classes.card} raised >
-        <CardHeader title="Wimbus Studios" subheader="2013-present" />
-        <CardMedia 
-        component="img" 
-        image={require('./images/cardcontentimages/wimbuscard.png')} 
-        height="80" 
-        title="Wimbus Studios" />
-        <CardContent>
-            <Typography>
-                <ExpWimbus/>
-            </Typography>
-          </CardContent>
-          <CardActions className={classes.actions} disableActionSpacing>
- 
-        </CardActions>
-      </Card> 
       </Grid>
       </Grid>
 
