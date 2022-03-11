@@ -5,7 +5,7 @@
 
 //TODO: Add a what I'm working on section
 //TODO: Add a link to current resume
-//TODO: Add link to Wawa
+//TODO: Add support for larger screens
 
 //React
 import React, { Component } from 'react';
@@ -80,6 +80,9 @@ const styles = theme=> ({
   },
   wawacard: {
     maxWidth: 900,
+  },
+  projectcard: {
+    maxWidth: 800,
   },
   cardlong: {
     //maxWidth:1000,
@@ -203,16 +206,55 @@ class App extends Component {
     return(
       <div style={{ padding: 20}} >
 
-      <Typography variant='h6' align='center'>
-      Games
-      </Typography>
 
       <Typography>
         <Grid container justify='center' spacing={24}>
-          <Grid item sm={4} xs ={10} >
 
-          <Card className={classes.card} raised >
-        <CardHeader title="The Island of Eternal Struggle" subheader="2013-present" />
+
+        <Grid item sm={6} xs ={10} >
+          <Card className={classes.projectcard} raised >
+        <CardHeader title="LIFE4" subheader="2019-present" />
+        <CardMedia 
+        component="img" 
+        image={require('./images/cardcontentimages/life4card.png')} 
+        height="80" 
+        title="LIFE4" />
+        <CardContent>
+            <Typography>
+              <PortLife4Bot />
+            </Typography>
+          </CardContent>
+          <CardActions className={classes.actions} disableActionSpacing>
+ 
+          <Tooltip title="Completed/Ongoing Project" aria-label="Completed/Ongoing Project" TransitionComponent={Zoom}>
+            <IconButton aria-label="Completed/Ongoing Project">
+            <DoneIcon />
+          </IconButton>
+          </Tooltip>
+
+          <Tooltip title="Code" aria-label="Code" TransitionComponent={Zoom}>
+            <IconButton aria-label="Code">
+            <CodeIcon />
+          </IconButton>
+          </Tooltip>
+
+          <Tooltip title="Solo project with community feedback" aria-label="Solo project with community feedback" TransitionComponent={Zoom}>
+            <IconButton aria-label="Group Project">
+            <GroupIcon />
+          </IconButton>
+          </Tooltip>
+ 
+        </CardActions>
+      </Card> 
+          </Grid>
+
+
+
+
+          <Grid item sm={6} xs ={10} >
+
+          <Card className={classes.projectcard} raised >
+        <CardHeader title="The Island of Eternal Struggle" subheader="2013-2021" />
         <CardMedia 
         component="img" 
         image={require('./images/cardcontentimages/iescard.png')} 
@@ -300,6 +342,21 @@ class App extends Component {
 
           </Grid>
 
+
+
+
+        </Grid>
+
+      <br/>
+      
+
+
+
+      <Grid container justify='center' spacing={24}>
+
+
+      
+
           <Grid item sm={4} xs ={10} >
           <Card className={classes.card} >
         <CardHeader title="Meds" subheader="2013" />
@@ -351,55 +408,6 @@ class App extends Component {
 
           </Grid>
 
-        </Grid>
-
-      <br/>
-      
-
-      <Typography variant='h6' align='center'>
-      Bots/Other
-      </Typography>
-
-
-      <Grid container justify='center' spacing={24}>
-
-
-      <Grid item sm={4} xs ={10} >
-          <Card className={classes.card} raised >
-        <CardHeader title="LIFE4 Bot" subheader="2019-present" />
-        <CardMedia 
-        component="img" 
-        image={require('./images/cardcontentimages/life4card.png')} 
-        height="80" 
-        title="LIFE4 Bot" />
-        <CardContent>
-            <Typography>
-              <PortLife4Bot />
-            </Typography>
-          </CardContent>
-          <CardActions className={classes.actions} disableActionSpacing>
- 
-          <Tooltip title="Completed Project" aria-label="Completed Project" TransitionComponent={Zoom}>
-            <IconButton aria-label="Completed Project">
-            <DoneIcon />
-          </IconButton>
-          </Tooltip>
-
-          <Tooltip title="Code" aria-label="Code" TransitionComponent={Zoom}>
-            <IconButton aria-label="Code">
-            <CodeIcon />
-          </IconButton>
-          </Tooltip>
-
-          <Tooltip title="Solo project with community feedback" aria-label="Solo project with community feedback" TransitionComponent={Zoom}>
-            <IconButton aria-label="Group Project">
-            <GroupIcon />
-          </IconButton>
-          </Tooltip>
- 
-        </CardActions>
-      </Card> 
-          </Grid>
 
 
           <Grid item sm={4} xs ={10} >

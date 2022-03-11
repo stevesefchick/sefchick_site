@@ -6,19 +6,30 @@ export class PortLife4Bot extends Component {
 render() {
 return(
     <div>
-          A Twitter/Discord bot created with NodeJS using Heroku to tweet player updates in the Dance Dance Revolution LIFE4 community. The bot scans a Google Sheets doc, compares against a known list in MySQL, and tweets new players and rank updates. It also updates the community Discord server. <br/><br/>
+
+          A backend system that delivers automated progression updates using Twitter or Discord for players in the Dance Dance Revolution <a href="https://www.life4ddr.com/" rel="noopener noreferrer" target="_blank">LIFE4</a> community. <br/><br/>
+
 
           Stuff I did:<br/>
             <ul>
-            <li>Developed bot logic using Node.js and took advantage of several libraries to utilize Twitter and Discord functionality</li>
-            <li>Working with the LIFE4 Community to continue to develop features and improvements</li>
-            <li>Bot currently has a following of 300+ (~50% of all enrolled players).</li>
+            <li>Developed a backend services that reads from a MySQL database and sends announcements/broadcasts based on player achievements or progress</li>
+            <li>Worked on a small team alongside admins, moderators, and web/app developers to build a nondisruptive backend app</li>
+            <li>Created a messenger app to allow for mod controls to start or stop the bot using discord</li>
+            <li>Built and deployed updates based on new features and player requests</li>
+            <li>Sends communications to a community of over 1000 members</li>
+            </ul>
+
+            How I did it:<br/>
+            <ul>
+            <li>Code - Node.js, twit, discord.js</li>
+            <li>Integrations - MySQL, Wordpress</li>
             </ul>
 
             Links:<br/>
             <ul>
             <li><a href="https://twitter.com/LIFE4BOT" rel="noopener noreferrer" target="_blank">@LIFE4BOT</a></li>
-            <li><a href="https://github.com/stevesefchick/life4ddrbot" rel="noopener noreferrer" target="_blank">Git project</a></li>
+            <li><a href="https://github.com/stevesefchick/life4ddrbot" rel="noopener noreferrer" target="_blank">Git project - core app</a></li>
+            <li><a href="https://github.com/life4ddr/life4messenger" rel="noopener noreferrer" target="_blank">Git project - messenger</a></li>
             <li><a href="https://www.life4ddr.com/" rel="noopener noreferrer" target="_blank">LIFE4 official site</a></li>
             </ul>
 
