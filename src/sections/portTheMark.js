@@ -10,10 +10,14 @@ return(
 
           Stuff I did:<br/>
             <ul>
-            <li>Created a randomly generated world, complete with unique humans, creatures, and terrains/locations </li>
+            <li>Created a randomly generated world, complete with unique people, creatures, and terrains/locations </li>
             <li>Using 17 JSON file imports, generates over a million possible world combinations</li>
             <li>Implemented a number of "just because" features such as day/night cycles, a character trait/skill/personality system, a travel/distance calculation system, and others </li>
-            <li>"Game" logic created using FNA (C#)</li>
+            </ul>
+
+            How I did it:<br/>
+            <ul>
+            <li>Code - FNA (C#), HLSL, JSON</li>
             </ul>
 
             Links:<br/>

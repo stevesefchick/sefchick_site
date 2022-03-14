@@ -20,7 +20,7 @@ return(
 
             How I did it:<br/>
             <ul>
-            <li>Code - Monogame (C#), Steam SDK</li>
+            <li>Code - Monogame (C#), HLSL, Steam SDK</li>
             </ul>
 
             Links:<br/>

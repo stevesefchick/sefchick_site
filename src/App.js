@@ -6,6 +6,7 @@
 //TODO: Add a what I'm working on section
 //TODO: Add a link to current resume
 //TODO: Add support for larger screens
+//TODO: Add video/trailers
 
 //React
 import React, { Component } from 'react';
@@ -49,7 +50,6 @@ import AboutMe from './sections/aboutme.js';
 import ContactMe from './sections/contactme.js';
 //professional experience
 import ExpWawa from './sections/expwawa.js';
-import ExpWimbus from './sections/expwimbus.js';
 //portfolio
 import PortIES from './sections/portIES.js';
 import PortMeds from './sections/portmeds.js';
@@ -301,9 +301,9 @@ class App extends Component {
           </Grid>
 
 
-          <Grid item sm={4} xs ={10} >
-          <Card className={classes.card} >
-        <CardHeader title="The Mark (Working Title)" subheader="2020-2021" />
+          <Grid item sm={6} xs ={10} >
+          <Card className={classes.projectcard} >
+        <CardHeader title="The Mark" subheader="2020-2021" />
         <CardMedia 
         component="img" 
         image={require('./images/cardcontentimages/markcard.png')} 
@@ -344,21 +344,46 @@ class App extends Component {
 
 
 
+          <Grid item sm={6} xs ={10} >
+          <Card className={classes.projectcard} raised >
+        <CardHeader title="Bots (Assorted)" subheader="2018-2019" />
+        <CardMedia 
+        component="img" 
+        image={require('./images/cardcontentimages/businesscard.png')} 
+        height="80" 
+        title="Bots" />
+        <CardContent>
+            <Typography>
+              <PortFakeDDRBot />
+            </Typography>
+          </CardContent>
+          <CardActions className={classes.actions} disableActionSpacing>
+ 
+          <Tooltip title="Completed Project" aria-label="Completed Project" TransitionComponent={Zoom}>
+            <IconButton aria-label="Completed Project">
+            <DoneIcon />
+          </IconButton>
+          </Tooltip>
 
-        </Grid>
+          <Tooltip title="Code" aria-label="Code" TransitionComponent={Zoom}>
+            <IconButton aria-label="Code">
+            <CodeIcon />
+          </IconButton>
+          </Tooltip>
 
-      <br/>
-      
+          <Tooltip title="Solo Project" aria-label="Solo Project" TransitionComponent={Zoom}>
+            <IconButton aria-label="Solo Project">
+            <PersonIcon />
+          </IconButton>
+          </Tooltip>
+ 
+        </CardActions>
+      </Card> 
+          </Grid>
 
 
-
-      <Grid container justify='center' spacing={24}>
-
-
-      
-
-          <Grid item sm={4} xs ={10} >
-          <Card className={classes.card} >
+          <Grid item sm={6} xs ={10} >
+          <Card className={classes.projectcard} >
         <CardHeader title="Meds" subheader="2013" />
         <CardMedia 
         component="img" 
@@ -409,86 +434,10 @@ class App extends Component {
           </Grid>
 
 
-
-          <Grid item sm={4} xs ={10} >
-          <Card className={classes.card} raised >
-        <CardHeader title="Fake DDR Song Bot" subheader="2019" />
-        <CardMedia 
-        component="img" 
-        image={require('./images/cardcontentimages/ddrbotcard.png')} 
-        height="80" 
-        title="Fake DDR Song Bot" />
-        <CardContent>
-            <Typography>
-              <PortFakeDDRBot />
-            </Typography>
-          </CardContent>
-          <CardActions className={classes.actions} disableActionSpacing>
- 
-          <Tooltip title="Completed Project" aria-label="Completed Project" TransitionComponent={Zoom}>
-            <IconButton aria-label="Completed Project">
-            <DoneIcon />
-          </IconButton>
-          </Tooltip>
-
-          <Tooltip title="Code" aria-label="Code" TransitionComponent={Zoom}>
-            <IconButton aria-label="Code">
-            <CodeIcon />
-          </IconButton>
-          </Tooltip>
-
-          <Tooltip title="Solo Project" aria-label="Solo Project" TransitionComponent={Zoom}>
-            <IconButton aria-label="Solo Project">
-            <PersonIcon />
-          </IconButton>
-          </Tooltip>
- 
-        </CardActions>
-      </Card> 
-          </Grid>
-
-
-
-      <Grid item sm={4} xs ={10} >
-          <Card className={classes.card} raised >
-        <CardHeader title="Business Bot DX" subheader="2018" />
-        <CardMedia 
-        component="img" 
-        image={require('./images/cardcontentimages/businesscard.png')} 
-        height="80" 
-        title="Business Bot DX" />
-        <CardContent>
-            <Typography>
-              <PortBizBot />
-            </Typography>
-          </CardContent>
-          <CardActions className={classes.actions} disableActionSpacing>
- 
-          <Tooltip title="Completed Project" aria-label="Completed Project" TransitionComponent={Zoom}>
-            <IconButton aria-label="Completed Project">
-            <DoneIcon />
-          </IconButton>
-          </Tooltip>
-
-          <Tooltip title="Code" aria-label="Code" TransitionComponent={Zoom}>
-            <IconButton aria-label="Code">
-            <CodeIcon />
-          </IconButton>
-          </Tooltip>
-
-          <Tooltip title="Solo Project" aria-label="Solo Project" TransitionComponent={Zoom}>
-            <IconButton aria-label="Solo Project">
-            <PersonIcon />
-          </IconButton>
-          </Tooltip>
- 
-        </CardActions>
-      </Card> 
-          </Grid>
-
-
         </Grid>
 
+      <br/>
+      
       </Typography>
 
             <br/>

@@ -10,10 +10,15 @@ return(
               <br/>
               Stuff I did:<br/>
             <ul>
-            <li>Coded the entire game using C#/XNA Framework</li>
-            <li>Designed the game and contributed a large portion of art assets</li>
-            <li>Published the game on XBLIG</li>
+            <li>First published game, released on <a href="https://en.wikipedia.org/wiki/Xbox_Live_Indie_Games" TARGET="_blank">XBLIG</a> (Xbox Live Indie Games)</li>
+            <li>Coded, designed and contributed a large portion of art assets</li>
             </ul>
+
+            How I did it:<br/>
+            <ul>
+            <li>Code - XNA Framework (C#)</li>
+            </ul>
+
             Links:<br/>
             <ul>
             <li><a href="https://www.youtube.com/watch?v=Wr5SFGFrlH0" rel="noopener noreferrer" target="_blank">Meds Trailer</a></li>
