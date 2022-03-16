@@ -8,7 +8,7 @@ render() {
 return(
     <div>
 
-          I love to help create amazing products and experiences! <br /> <br />
+          I love to help create amazing experiences! <br /> <br />
                 
                 Both in my professional career and my development hobbies, I love to make things that are both fun and interesting. I believe that my comfort zone is boring, and I'm always looking for new things to try! <br /> <br />
 

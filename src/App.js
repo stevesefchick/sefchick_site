@@ -1,7 +1,7 @@
 //stevesefchick.fyi 
 //source code for reactJS project for Steve Sefchick's portfolio site
 //Created by Steve Sefchick
-//2018-2019
+//2018-2022
 
 //TODO: Add a what I'm working on section
 //TODO: Add a link to current resume
@@ -86,6 +86,9 @@ const styles = theme=> ({
   },
   cardlong: {
     //maxWidth:1000,
+  },
+  educard: {
+    maxWidth:900,
   },
 });
 
@@ -448,6 +451,7 @@ class App extends Component {
     )
   }
 
+  /*
   skillset(classes)
   {
     return(
@@ -664,7 +668,7 @@ class App extends Component {
  
     )
   }
-
+*/
   
   education(classes)
   {
@@ -672,8 +676,8 @@ class App extends Component {
       <div style={{ padding: 20}} >
 
         <Grid container justify='center' spacing={24}>
-          <Grid item sm={4} xs ={10} >
-          <Card className={classes.card} raised >
+          <Grid item sm={6} xs ={10} >
+          <Card className={classes.educard} raised >
         <CardHeader title="Bachelor's Degree in Software Development and Design" />
         <CardContent>
             <Typography>
@@ -688,8 +692,8 @@ class App extends Component {
       
       </Grid>
       <br/>
-      <Grid item sm={4} xs ={10} >
-      <Card className={classes.card} raised >
+      <Grid item sm={6} xs ={10} >
+      <Card className={classes.educard} raised >
         <CardHeader title="Associate's Degree in Game Design and Development" />
         <CardContent>
             <Typography>
@@ -771,9 +775,8 @@ class App extends Component {
         <Toolbar variant="dense">
         
         <Button variant="outlined" size="large" href="#it_me">about me</Button>
+        <Button variant="outlined" size="large" href="#professional">experience</Button>
         <Button variant="outlined" size="large" href="#fun_stuff">portfolio</Button>
-        <Button variant="outlined" size="large" href="#professional">professional experience</Button>
-        <Button variant="outlined" size="large" href="#skills_bills">skillset</Button>
         <Button variant="outlined" size="large" href="#education">education</Button>
         <Button variant="outlined" size="large" href="#contact">contact</Button>
         </Toolbar>
@@ -797,7 +800,9 @@ class App extends Component {
 
 <br/><br/>
 
-        
+         <Typography  variant="h4" id="it_me" align='center'>
+        </Typography>
+
          {this.aboutme(classes)}
 
 
@@ -812,12 +817,6 @@ class App extends Component {
         </Typography>
 
         {this.projectsportfolios(classes)}
-
-        <Typography variant="h4" id="skills_bills" align='center'>
-          My skillset
-        </Typography>
-
-        {this.skillset(classes)}
 
         <Typography  variant="h4" id="education" align='center'>
           Education
