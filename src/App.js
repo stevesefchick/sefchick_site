@@ -64,6 +64,26 @@ import steveimage from './images/ss_whitefill.png';
 
 
 const styles = theme=> ({
+  "@global":{
+    html: {
+      fontSize: 16,
+      [theme.breakpoints.up("xs")]: {
+        fontSize: 14
+      },
+      [theme.breakpoints.up("sm")]: {
+        fontSize: 18
+      },
+      [theme.breakpoints.up("md")]: {
+        fontSize: 20
+      },
+      [theme.breakpoints.up("lg")]: {
+        fontSize: 24
+      },
+      [theme.breakpoints.up("xl")]: {
+        fontSize: 28
+      },
+    }
+  },
   root: {
     display: 'flex',
   },
@@ -100,7 +120,6 @@ const theme = createMuiTheme({
       'Dosis',
     ].join(','),
     htmlFontSize: 12,
-    
   },
   drawer: {
     width: 180,
