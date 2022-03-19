@@ -18,7 +18,7 @@ import Typography from '@material-ui/core/Typography';
 import { createMuiTheme, MuiThemeProvider, withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import { CssBaseline, Tabs } from '@material-ui/core';
-import Chip from '@material-ui/core/Chip';
+//import Chip from '@material-ui/core/Chip';
 import Tooltip from '@material-ui/core/Tooltip';
 import Zoom from '@material-ui/core/Zoom';
 import red from '@material-ui/core/colors/red';
@@ -66,21 +66,21 @@ import steveimage from './images/ss_whitefill.png';
 const styles = theme=> ({
   "@global":{
     html: {
-      fontSize: 16,
+      //fontSize: 16,
       [theme.breakpoints.up("xs")]: {
         fontSize: 14
       },
       [theme.breakpoints.up("sm")]: {
-        fontSize: 18
+        fontSize: 16
       },
       [theme.breakpoints.up("md")]: {
-        fontSize: 20
+        fontSize: 18
       },
       [theme.breakpoints.up("lg")]: {
-        fontSize: 24
+        fontSize: 20
       },
       [theme.breakpoints.up("xl")]: {
-        fontSize: 28
+        fontSize: 22
       },
     }
   },
@@ -99,11 +99,38 @@ const styles = theme=> ({
     maxWidth: 600,
   },
   wawacard: {
-    maxWidth: 900,
+    [theme.breakpoints.up("xs")]: {
+      maxWidth: 800
+    },
+    [theme.breakpoints.up("sm")]: {
+      maxWidth:800
+    },
+    [theme.breakpoints.up("md")]: {
+      maxWidth:1400
+    },
+    [theme.breakpoints.up("lg")]: {
+      maxWidth:1400
+    },
+    [theme.breakpoints.up("xl")]: {
+      maxWidth:8000
+    },
   },
   projectcard: {
-    maxWidth: 800,
-  },
+    [theme.breakpoints.up("xs")]: {
+      maxWidth: 800
+    },
+    [theme.breakpoints.up("sm")]: {
+      maxWidth:800
+    },
+    [theme.breakpoints.up("md")]: {
+      maxWidth:800
+    },
+    [theme.breakpoints.up("lg")]: {
+      maxWidth:900
+    },
+    [theme.breakpoints.up("xl")]: {
+      maxWidth:1000
+    },  },
   cardlong: {
     //maxWidth:1000,
   },
@@ -160,7 +187,7 @@ class App extends Component {
 
         <Grid container justify='center' spacing={8}>
 
-          <Grid item sm={10} xs ={10}>
+          <Grid item sm={10} xs ={10} md={10} lg={10} xl={10}>
           <Card className={classes.cardlong} justify='center' raised>
         <CardHeader title="About Me" />
         <CardContent>
@@ -191,8 +218,8 @@ class App extends Component {
       <div style={{ padding: 20}} >
 
         <Grid container justify='center' spacing={24}>
-          <Grid item sm={5} xs ={10} >
-          <Card className={classes.wawacard} raised >
+          <Grid item sm={10} xs ={10} md={10} lg={8} xl={8} >
+          <Card className={classes.wawacard} raised justify='center'>
         <CardHeader title="Wawa, Inc." subheader="2003-present" />
         <CardMedia 
         component="img" 
@@ -233,7 +260,7 @@ class App extends Component {
         <Grid container justify='center' spacing={24}>
 
 
-        <Grid item sm={6} xs ={10} >
+        <Grid item sm={10} xs ={10} md={6} lg={6} xl={6} >
           <Card className={classes.projectcard} raised >
         <CardHeader title="LIFE4" subheader="2019-present" />
         <CardMedia 
@@ -273,7 +300,7 @@ class App extends Component {
 
 
 
-          <Grid item sm={6} xs ={10} >
+          <Grid item sm={10} xs ={10} md={6} lg={6} xl={6} >
 
           <Card className={classes.projectcard} raised >
         <CardHeader title="The Island of Eternal Struggle" subheader="2013-2021" />
@@ -323,7 +350,7 @@ class App extends Component {
           </Grid>
 
 
-          <Grid item sm={6} xs ={10} >
+          <Grid item sm={10} xs ={10} md={6} lg={6} xl={6}>
           <Card className={classes.projectcard} >
         <CardHeader title="The Mark" subheader="2020-2021" />
         <CardMedia 
@@ -366,7 +393,7 @@ class App extends Component {
 
 
 
-          <Grid item sm={6} xs ={10} >
+          <Grid item sm={10} xs ={10} md={6} lg={6} xl={6} >
           <Card className={classes.projectcard} raised >
         <CardHeader title="Bots (Assorted)" subheader="2018-2019" />
         <CardMedia 
@@ -404,7 +431,7 @@ class App extends Component {
           </Grid>
 
 
-          <Grid item sm={6} xs ={10} >
+          <Grid item sm={10} xs ={10} md={6} lg={6} xl={6} >
           <Card className={classes.projectcard} >
         <CardHeader title="Meds" subheader="2013" />
         <CardMedia 
@@ -695,7 +722,7 @@ class App extends Component {
       <div style={{ padding: 20}} >
 
         <Grid container justify='center' spacing={24}>
-          <Grid item sm={6} xs ={10} >
+          <Grid item sm={10} xs ={10} md={6} lg={6} xl={6} >
           <Card className={classes.educard} raised >
         <CardHeader title="Bachelor's Degree in Software Development and Design" />
         <CardContent>
@@ -711,7 +738,7 @@ class App extends Component {
       
       </Grid>
       <br/>
-      <Grid item sm={6} xs ={10} >
+      <Grid item sm={10} xs ={10} md={6} lg={6} xl={6} >
       <Card className={classes.educard} raised >
         <CardHeader title="Associate's Degree in Game Design and Development" />
         <CardContent>
@@ -843,7 +870,7 @@ class App extends Component {
 
         {this.education(classes)}
 
-        <Typography  variant="h3" id="contact" align='center'>
+        <Typography  variant="h4" id="contact" align='center'>
           Contact Me
         </Typography>
 
